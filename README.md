@@ -47,6 +47,7 @@ Loss function, denoted by <img src="/tex/91248c7c221d6ed56762761f1038d39f.svg?in
 Empirical risk or training loss is denoted by <img src="/tex/800fde4ef8c4cf09b319be12c03a1d50.svg?invert_in_darkmode&sanitize=true" align=middle width=41.66906699999999pt height=24.65753399999998pt/> or <img src="/tex/74128b9582f1d2c317fd2246a8627c87.svg?invert_in_darkmode&sanitize=true" align=middle width=41.094140999999986pt height=31.141535699999984pt/>,
 
 <p align="center"><img src="/tex/4a6662a23b1b4c2c6c1b63c5acd2f072.svg?invert_in_darkmode&sanitize=true" align=middle width=197.29974825pt height=44.89738935pt/></p>
+
 without further explanation <img src="/tex/ddcb483302ed36a59286424aa5e0be17.svg?invert_in_darkmode&sanitize=true" align=middle width=11.18724254999999pt height=22.465723500000017pt/> will be used for <img src="/tex/a9c88395fd83bab6dca8216dd1842e98.svg?invert_in_darkmode&sanitize=true" align=middle width=19.88819414999999pt height=22.465723500000017pt/>.
 
 The population risk or expected loss is denoted by
@@ -67,12 +68,14 @@ Activation function is denoted by <img src="/tex/b9b27f3deff0db82f962a8505706e62
 THe neuron number of the hidden layer is denoted by <img src="/tex/0e51a2dede42189d77627c4d742822c3.svg?invert_in_darkmode&sanitize=true" align=middle width=14.433101099999991pt height=14.15524440000002pt/>,
 
 <p align="center"><img src="/tex/bcbf19b6c41d3d362d805920319da7e6.svg?invert_in_darkmode&sanitize=true" align=middle width=206.10021794999997pt height=47.1348339pt/></p>
+
 where <img src="/tex/8cda31ed38c6d59d14ebefa440099572.svg?invert_in_darkmode&sanitize=true" align=middle width=9.98290094999999pt height=14.15524440000002pt/> is the activation function, <img src="/tex/831047ac6f850b0d588c94d84fc6f4c1.svg?invert_in_darkmode&sanitize=true" align=middle width=19.75740524999999pt height=14.611878600000017pt/> is the input weight, <img src="/tex/3fd897df5707a411645a54460183e3cd.svg?invert_in_darkmode&sanitize=true" align=middle width=14.793662399999992pt height=14.15524440000002pt/> is the output weight, <img src="/tex/2020a79c00e140ee1a054ecab57a289c.svg?invert_in_darkmode&sanitize=true" align=middle width=13.15930604999999pt height=22.831056599999986pt/> is the bias term.
 
 ## General deep neural network
 
 The counting of the layer number excludes the input layer. The <img src="/tex/dc2b6e558ecfe63bafdb6dbd1f0cad16.svg?invert_in_darkmode&sanitize=true" align=middle width=56.09580239999998pt height=24.65753399999998pt/>-layer neural network is denoted by
 <p align="center"><img src="/tex/be8de262e8f505f6d67fae76f77aea72.svg?invert_in_darkmode&sanitize=true" align=middle width=629.5055150999999pt height=19.526994300000002pt/></p>
+
 where <img src="/tex/865e70ab5839636feaab8a6745125c4a.svg?invert_in_darkmode&sanitize=true" align=middle width=120.62059019999998pt height=29.190975000000005pt/>, <img src="/tex/998139a600e0e2203867005393bb05b4.svg?invert_in_darkmode&sanitize=true" align=middle width=86.43477479999999pt height=29.190975000000005pt/>, <img src="/tex/b5142f01744a994ace1bc28b20b87eed.svg?invert_in_darkmode&sanitize=true" align=middle width=94.55845409999999pt height=22.831056599999986pt/>, <img src="/tex/44cbe35529cbf43049034e4ffb71f1bc.svg?invert_in_darkmode&sanitize=true" align=middle width=92.96853389999998pt height=22.831056599999986pt/>, <img src="/tex/8cda31ed38c6d59d14ebefa440099572.svg?invert_in_darkmode&sanitize=true" align=middle width=9.98290094999999pt height=14.15524440000002pt/> is a scalar function and ``<img src="/tex/c0463eeb4772bfde779c20d52901d01b.svg?invert_in_darkmode&sanitize=true" align=middle width=8.219209349999991pt height=14.611911599999981pt/>'' means entry-wise operation. We denote <img src="/tex/b1d48ece5807e074310a0b4819449aa4.svg?invert_in_darkmode&sanitize=true" align=middle width=327.86901014999995pt height=29.190975000000005pt/>. <img src="/tex/aecfc5cb6de7354f538580fc23ff7eec.svg?invert_in_darkmode&sanitize=true" align=middle width=31.472604899999986pt height=34.337843099999986pt/> denotes an entry. This can also be defined recursively,
 
 <p align="center"><img src="/tex/a30dad34ccc491270ae2eade2eb3751b.svg?invert_in_darkmode&sanitize=true" align=middle width=83.27622600000001pt height=22.127694599999998pt/></p>
