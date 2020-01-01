@@ -87,7 +87,7 @@ $$
 where $\mathbf{W}^{[l]}\in\mathbb{R}^{m_{l+1}\times m_l}$, $\mathbf{b}^{[l]}=\mathbb{R}^{m_{l+1}}$, $m_0=d_\text{in}=d$, $m_{H+1}=d_\text{out}$, $\sigma$ is a scalar function and ``$\circ$'' means entry-wise operation. We denote $\mathbf{\theta}=(\mathbf{W}^{[0]},\mathbf{W}^{[1]},\dots,\mathbf{W}^{[H]},\mathbf{b}^{[0]},\mathbf{b}^{[1]},\dots,\mathbf{b}^{[H]})$. $\mathbf{W}^{[l]}_{ij}$ denotes an entry. This can also be defined recursively,
 
 $$
-  f^{[0]}_{\mathbf{\theta}}(\mathbf{x})=x,
+  f^{[0]}_{\mathbf{\theta}}(\mathbf{x})=\mathbf{x},
 $$
 $$
   f^{[l]}_{\mathbf{\theta}}(\mathbf{x})=\sigma\circ(\mathbf{W}^{[l-1]}f^{[l-1]}_{\mathbf{\theta}}(\mathbf{x})+\mathbf{b}^{[H]}), \quad 1\le l\le H,
@@ -98,7 +98,7 @@ $$
 
 ## Complexity
 
-The VC-dimension of a hypothesis class $\mathbf{H}$ is denoted as VCdim($\mathcal{H}$).
+The VC-dimension of a hypothesis class $\mathcal{H}$ is denoted as VCdim($\mathcal{H}$).
 
 The Rademacher complexity of a hypothesis space $\mathcal{H}$ on a sample set $S$ is denoted by $R(\mathcal{H}\circ S)$.
 
