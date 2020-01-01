@@ -1,0 +1,129 @@
+\documentclass[]{article}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\usepackage{zymacros}
+\newcommand{\red}[1]{{\color{red}#1}}
+\newcommand{\bl}[1]{{\color{blue}#1}}
+\newcommand{\pl}[1]{{\color{purple}#1}}
+%%%%%%%%%%%%%%%%%%%%%%%
+% \NewDocumentCommand{\tens}{t_}
+%  {%
+%   \IfBooleanTF{#1}
+%   {\tensop}
+%   {\otimes}%
+%  }
+% \NewDocumentCommand{\tensop}{m}
+%  {%
+%   \mathbin{\mathop{\otimes}\displaylimits_{#1}}%
+%  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\title{Notation suggestion for machine learning}
+\author{}
+
+\maketitle 
+%\date{\today}
+\begin{abstract}
+Machine learning becomes increasingly important in various applications and scientific problems. A major challenge in communicating the progress of machine learning from different perspectives arises from the notation usage. This note introduces a suggestion of mathematical notations for machine learning. We will regularly update this note. In the current version, we only introduce some very basic and commonly used notations. We look forward to more suggestions for refining this note in the future versions.
+\end{abstract}
+
+\paragraph{Dataset}~\\
+Dataset  $S=\{\vz_i\}_{i=1}^n=\{(\vx_i,\vy_i)\}_{i=1}^n$ is sampled from a distribution $\fD$ over a domain $\fZ=\fX\times\fY$. 
+
+$\fX$  is the instances domain (a set), $\fY$ is the label domain (a set), and $\fZ=\fX\times\fY$ is the examples domain (a set). 
+
+Usually, 
+$\fX$ is a subset of $\sR^d$ and $\fY$ is a subset of $\sR^{d_{o}}$, where $d$ is the input dimension, $d_{o}$ is the output dimension.
+
+$n=\#S$ is the number of samples. Without other specified, $S$ and $n$ are for the training set.
+
+\paragraph{Function}~\\
+Hypothesis space is denoted by $\fH$. Hypothesis function is denoted by $f_{\vtheta}\in\fH$ with $f_{\vtheta}:\fX\to\fY$.
+
+$\vtheta$  denotes the set of parameters of  $f_{\vtheta}$.  
+
+The target function is denoted by $f^*$or $f:\fX\to\fY$ satisfying $\vy_i=f^*(\vx_i)$ for $i=1,\ldots,n$.
+
+\paragraph{Loss function}~\\
+Loss function, denoted by $\ell:\fH\times\fZ\to\sR_+:=[0,+\infty)$, , measures the difference between a predicted label and a true label, e.g., $L^2$ loss: $\ell(f_{\vtheta},\vz)=(f_{\vtheta}(\vx)-\vy)^2$, where $\vz=(\vx,\vy)$. $\ell(f_{\vtheta},\vz)$ can also be written as $\ell(f_{\vtheta}(\vx,\vy)$ for convenience. .
+
+Empirical risk or training loss is denoted by   $\LS(\vtheta)$ or $\hat{L}_{n}(\vtheta)$,
+\begin{equation}
+    \LS(\vtheta) =\frac{1}{n}\sum_{i=1}^n\ell(f_{\vtheta}(\vx_i),\vy_i),
+\end{equation}
+Without further explanation, $L$ will be used for $L_S$.
+
+The population risk or expected loss is denoted by
+\begin{equation}
+    \LD(\vtheta) =\Exp_{\vx\sim\fD}\ell(f_{\vtheta}(\vx),\vy).
+\end{equation}
+
+
+
+
+
+\paragraph{Activation function}
+Activation function is denoted by $\sigma(x)$. 
+\begin{exam}Some commonly used activation functions are~\\
+    \begin{enumerate}
+        \item $\sigma(z) = \ReLU (z) = \max (0, z)$;
+        \item $\sigma(z) ={\rm sigmoid}(z)= \frac{1}{1 + \E^{-z}}$;
+        \item $\sigma(z) = \tanh z$;
+        \item $\sigma(z) = \cos z, \sin z$.
+    \end{enumerate}
+\end{exam}
+
+
+\paragraph{Two-layer neural network}~\\
+The neuron number of the hidden layer is denoted by $m$.
+\begin{equation}
+    f_{\vtheta}(\vx)=\sum_{j=1}^{m} a_j \sigma (\vw_j\cdot \vx + b_j),
+\end{equation}
+where $\sigma$ is the activation function, $\vw_j$ is the input weight, $a_j$ is the output weight, $b_j$ is the bias term.
+\paragraph{General deep neural network}~\\
+The counting of the layer number excludes the input layer. The $(H+1)$-layer neural network is denoted by
+\begin{equation}
+    f_{\vtheta}(\vx) = \vW^{[H]} \sigma\circ(\mW^{[H-1]}\sigma\circ(\cdots (\mW^{[1]} \sigma\circ(\mW^{[0]} \vx + \vb^{[0]} ) + \vb^{[1]} )\cdots)+\vb^{[H-1]})+\vb^{[H]},
+\end{equation}
+where $\mW^{[l]} \in \sR^{m_{l+1}\times m_{l}}$, $\vb^{[l]}=\sR^{m_{l+1}}$, $m_0=d_{\rm in}=d$, $m_{H+1}=d_{\rm out}$,
+$\sigma$ is a scalar function and ``$\circ$'' means entry-wise operation. 
+We denote $\vtheta=(\mW^{[0]},\mW^{[1]},\ldots,\vW^{[H]},\vb^{[0]},\vb^{[1]},\ldots,\vb^{[H]})$. $\vW^{[l]}_{ij}$ denotes an entry. This can also be defined recursively.
+\begin{align}
+    &f_{\vtheta}^{[0]}(\vx)=\vx, \\
+    &f_{\vtheta}^{[l]}(\vx)=\sigma\circ(\mW^{[l-1]} f_{\vtheta}^{[l-1]}(\vx) + \vb^{[l-1]}) \quad 1\leq l\leq H,\\
+    &f_{\vtheta}(\vx)=f_{\vtheta}^{[H+1]}(\vx)=\mW^{[H]} f_{\vtheta}^{[H]}(\vx) + \vb^{[H]}.
+\end{align}
+
+\paragraph{Complexity}~\\
+The VC-dimension of a hypothesis class $\fH$ is denoted ${\rm VCdim}(\fH)$.
+
+The Rademacher complexity of a hypothesis space $\fH$ on a sample set $S$ is denoted by $R (\fH\circ S)$.
+
+\paragraph{Training}~\\
+The Gradient Descent is often denoted by GD. The Stochastic Gradient Descent is often denoted by SGD. 
+
+The learning rate is denoted by $\eta$.
+
+\paragraph{Gram matrix}~\\
+The Gram matrix is denoted by $K_n$.
+
+\paragraph{Fourier Frequency}~\\
+The discretized frequency is denoted by $\vk$, and the continuous frequency is denoted by $\vxi$.
+
+\paragraph{Convolution}~\\
+The convolution operation is denoted by $*$.
+
+\paragraph{More notations}~\\
+More notations about GAN, RNN, CNN, Resnet etc. are left to be done.
+
+
+\end{document}
