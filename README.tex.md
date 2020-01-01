@@ -49,6 +49,7 @@ Empirical risk or training loss is denoted by $L_S(\mathbf{\theta})$ or $\hat{L}
 $$
   L_S(\mathbf{\theta})=\frac{1}{n}\sum^n_{i=1}\ell(f_{\mathbf{\theta}}(\mathbf{x}_i),\mathbf{y}_i),
 $$
+
 without further explanation $L$ will be used for $L_S$.
 
 The population risk or expected loss is denoted by
@@ -73,6 +74,7 @@ THe neuron number of the hidden layer is denoted by $m$,
 $$
   f_{\mathbf{\theta}}(\mathbf{x})=\sum^m_{j=1}a_j\sigma(\mathbf{w}_j\cdot\mathbf{x}+b_j),
 $$
+
 where $\sigma$ is the activation function, $\mathbf{w}_j$ is the input weight, $a_j$ is the output weight, $b_j$ is the bias term.
 
 ## General deep neural network
@@ -81,6 +83,7 @@ The counting of the layer number excludes the input layer. The $(H+1)$-layer neu
 $$
   f_{\mathbf{\theta}}(\mathbf{x})=\mathbf{W}^{[H]}\sigma\circ(\mathbf{W}^{[H-1]})\sigma\circ(\dots(\mathbf{W}^{[1]}\sigma\circ(\mathbf{W}^{[0]}\mathbf{x}+\mathbf{b}^{[0]})+\mathbf{b}^{[1]})\dots)+\mathbf{b}^{[H-1]})+\mathbf{b}^{[H]},
 $$
+
 where $\mathbf{W}^{[l]}\in\mathbb{R}^{m_{l+1}\times m_l}$, $\mathbf{b}^{[l]}=\mathbb{R}^{m_{l+1}}$, $m_0=d_\text{in}=d$, $m_{H+1}=d_\text{out}$, $\sigma$ is a scalar function and ``$\circ$'' means entry-wise operation. We denote $\mathbf{\theta}=(\mathbf{W}^{[0]},\mathbf{W}^{[1]},\dots,\mathbf{W}^{[H]},\mathbf{b}^{[0]},\mathbf{b}^{[1]},\dots,\mathbf{b}^{[H]})$. $\mathbf{W}^{[l]}_{ij}$ denotes an entry. This can also be defined recursively,
 
 $$
