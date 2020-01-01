@@ -20,6 +20,8 @@ Machine learning becomes increasingly important in various applications and scie
 
 ## Dataset
 
+![](http://latex.codecogs.com/gif.latex?\\frac{1}{1+sin(x)})
+
 Dataset $S=\{\mathbf{z}_i\}^n_{i=1}=\{(\mathbf{x}_i,\mathbf{y}_i)\}^n_{i=1}$ is sampled from a distribution $\mathcal{D}$ over a domain $\mathcal{Z}=\mathcal{X}\times\mathcal{Y}$.
 
 - $\mathcal{X}$ is the instances domain (a set)
