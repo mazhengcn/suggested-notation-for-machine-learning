@@ -2,7 +2,7 @@
 
 > This introduces a suggestion of mathematical notation protocol for machine learning.
 
-Machine learning becomes increasingly important in various applications and scientific problems. A major challenge in commuicating the progress of machine learning from different perspectives arises from the notation usage. This note introduces a suggestion of mathematical notations for machine learning. We will regularly update this note. In the current version, we only introduce some very basec and commonly used notations. We look forward to more suggestions for refining this note in the future versions.
+Machine learning becomes increasingly important in various applications and scientific problems. A major challenge in commuicating the progress of machine learning from different perspectives arises from the notation usage. This note introduces a suggestion of mathematical notations for machine learning. We will regularly update this note. In the current version, we only introduce some very basic and commonly used notations. We look forward to more suggestions for refining this note in the future versions.
 
 ## Tabel of Contents
 
