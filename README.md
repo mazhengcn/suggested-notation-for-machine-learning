@@ -66,10 +66,10 @@ Activation function is denoted by <img src="/tex/b9b27f3deff0db82f962a8505706e62
 
 **Example 1**. Some commonly used activation functions are
 
-- <img src="/tex/37851700153ed35a8552d842756cf92d.svg?invert_in_darkmode&sanitize=true" align=middle width=207.46002914999997pt height=24.65753399999998pt/>
-- <img src="/tex/ab86e717d94587b6150f40868990df85.svg?invert_in_darkmode&sanitize=true" align=middle width=207.49762274999998pt height=43.42856099999997pt/>
-- <img src="/tex/9493f1272d9cfaec459fbd488426a729.svg?invert_in_darkmode&sanitize=true" align=middle width=108.11079839999998pt height=24.65753399999998pt/>
-- <img src="/tex/ccb8d705bdc36d935206ccf698aa09c3.svg?invert_in_darkmode&sanitize=true" align=middle width=126.82058234999998pt height=24.65753399999998pt/>
+- <img src="/tex/d215872452b1ebb225b1e576edcb7879.svg?invert_in_darkmode&sanitize=true" align=middle width=208.48739834999995pt height=24.65753399999998pt/>
+- <img src="/tex/a4d649352a659f0b7e0cc3b5b5670bd3.svg?invert_in_darkmode&sanitize=true" align=middle width=209.55236114999997pt height=43.42856099999997pt/>
+- <img src="/tex/f64afc209f5ec2703004ba8141966a8f.svg?invert_in_darkmode&sanitize=true" align=middle width=109.13816759999997pt height=24.65753399999998pt/>
+- <img src="/tex/0b557fdfdec1313c966fb5c9cfbee5a1.svg?invert_in_darkmode&sanitize=true" align=middle width=127.84794989999999pt height=24.65753399999998pt/>
 
 ## Two-layer neural network
 
@@ -162,7 +162,7 @@ The convolution operation is denoted by <img src="/tex/7c74eeb32158ff7c4f67d191b
 ## L-layer neural network
 
 | symbol | meaning | Latex | simplied |
-| --------- | ------- | -------- | -------- |
+| --------- | --------- | --------- | --------- |
 | <img src="/tex/2103f85b8b1477f430fc407cad462224.svg?invert_in_darkmode&sanitize=true" align=middle width=8.55596444999999pt height=22.831056599999986pt/> | input dimension | `d` |  |
 | <img src="/tex/8f865e6069b66d7a0e8a1f6f72400f41.svg?invert_in_darkmode&sanitize=true" align=middle width=15.10851044999999pt height=22.831056599999986pt/> | output dimension |`d_{\rm o}` |  |
 | <img src="/tex/882b3bd64477a9a54f36bf7891ca71d7.svg?invert_in_darkmode&sanitize=true" align=middle width=18.656888249999994pt height=14.15524440000002pt/> | the number of <img src="/tex/2f2322dff5bde89c37bcae4116fe20a8.svg?invert_in_darkmode&sanitize=true" align=middle width=5.2283516999999895pt height=22.831056599999986pt/>th layer neuron, <img src="/tex/dc5047d443cccd6a928b207b5d6ecf0b.svg?invert_in_darkmode&sanitize=true" align=middle width=52.281154199999996pt height=22.831056599999986pt/>, <img src="/tex/8cbde3e6dedae95800eb714cf9e5e4b4.svg?invert_in_darkmode&sanitize=true" align=middle width=61.29947999999999pt height=22.831056599999986pt/> | `m_l` |
