@@ -32,7 +32,7 @@ Dataset $S=\{\mathbf{z}_i\}^n_{i=1}=\{(\mathbf{x}_i,\mathbf{y}_i)\}^n_{i=1}$ is 
 
 Usually, $\mathcal{X}$ is a subset of $\mathbb{R}^d$ and $\mathcal{Y}$ is a subset of $\mathbb{R}^{d_\text{o}}$, where $d$ is the input dimension, $d_\text{o}$ is the ouput dimension.
 
-$n=|S|$ is the number of samples. Wihout specification, $S$ and $n$ are for the training set.
+$n=\#S$ is the number of samples. Wihout specification, $S$ and $n$ are for the training set.
 
 ## Function
 
@@ -86,14 +86,14 @@ $$
 where $\sigma$ is the activation function, $\mathbf{w}_j$ is the input weight, $a_j$ is the output weight, $b_j$ is the bias term. We denote the set of parameters by
 
 $$
-  \mathbf{\theta}=(a_1,\cdots,a_m,\mathbf{w}_1,\cdots,\mathbf{w}_m,b_1,\cdots,b_m).
+  \mathbf{\theta}=(a_1,\ldots,a_m,\mathbf{w}_1,\ldots,\mathbf{w}_m,b_1,\cdots,b_m).
 $$
 
 ## General deep neural network
 
 The counting of the layer number excludes the input layer. A $L$-layer neural network is denoted by
 $$
-  f_{\mathbf{\theta}}(\mathbf{x})=\mathbf{W}^{[L-1]}\sigma\circ(\mathbf{W}^{[L-2]})\sigma\circ(\dots(\mathbf{W}^{[1]}\sigma\circ(\mathbf{W}^{[0]}\mathbf{x}+\mathbf{b}^{[0]})+\mathbf{b}^{[1]})\dots)+\mathbf{b}^{[L-2]})+\mathbf{b}^{[L-1]},
+  f_{\mathbf{\theta}}(\mathbf{x})=\mathbf{W}^{[L-1]}\sigma\circ(\mathbf{W}^{[L-2]})\sigma\circ(\cdots(\mathbf{W}^{[1]}\sigma\circ(\mathbf{W}^{[0]}\mathbf{x}+\mathbf{b}^{[0]})+\mathbf{b}^{[1]})\cdots)+\mathbf{b}^{[L-2]})+\mathbf{b}^{[L-1]},
 $$
 
 where $\mathbf{W}^{[l]}\in\mathbb{R}^{m_{l+1}\times m_l}$, $\mathbf{b}^{[l]}=\mathbb{R}^{m_{l+1}}$, $m_0=d_\text{in}=d$, $m_{L}=d_\text{o}$, $\sigma$ is a scalar function and "$\circ$" means entry-wise operation. We denote the set of parameters by
@@ -134,7 +134,7 @@ The learning rate is denoted by $\eta$.
 
 ## Fourier Frequency
 
-THe discretized frequency is denoted by $k$, and the continuous frequency is denoted by $\xi$.
+The discretized frequency is denoted by $\mathbf{k}$, and the continuous frequency is denoted by $\mathbf{\xi}$.
 
 ## Convolution
 
@@ -185,12 +185,12 @@ $L_S(\mathbf{\theta})$, $L_{n}(\mathbf{\theta})$, $\mathcal{R}_{n}(\mathbf{\thet
 | --------- | --------- | --------- | --------- |
 | $d$ | input dimension | `d` |  |
 | $d_{\text{o}}$ | output dimension |`d_{\rm o}` |  |
-| $m_l$ | the number of $l$th layer neuron, $m_0=d$, $m_{L} = d_{\text{o}}$ | `m_l` |
-| $\mathbf{W}^{[l]}$ | the $l$th layer weight | `\bm{W}^{[l]}` | `\mathbf{W}^{[l]}` |
-| $\mathbf{b}^{[l]}$ | the $l$th layer bias term |`\bm{b}^{[l]}`| `\mathbf{b}^{[l]}` |
+| $m_l$ | the number of $l$-th layer neuron, $m_0=d$, $m_{L} = d_{\text{o}}$ | `m_l` |
+| $\mathbf{W}^{[l]}$ | the $l$-th layer weight | `\bm{W}^{[l]}` | `\mathbf{W}^{[l]}` |
+| $\mathbf{b}^{[l]}$ | the $l$-th layer bias term |`\bm{b}^{[l]}`| `\mathbf{b}^{[l]}` |
 | $\circ$ | entry-wise operation | `\circ` |
 | $\sigma:\mathbb{R}\to\mathbb{R}^+$ | activation function |`\sigma`|
-| $\mathbf{\theta}$|$=(\mathbf{W}^{[0]},\ldots,\mathbf{W}^{[L-1]},\mathbf{b}^{[0]},\ldots,\mathbf{b}^{[L-1]})$,  parameters|`\bm{\theta}`|`\mathbf{\theta}`|
+| $\mathbf{\theta}$ | $=(\mathbf{W}^{[0]},\ldots,\mathbf{W}^{[L-1]},\mathbf{b}^{[0]},\ldots,\mathbf{b}^{[L-1]})$,  parameters|`\bm{\theta}`|`\mathbf{\theta}`|
 | $f_{\mathbf{\theta}}^{[0]}(\mathbf{x})$|$=\mathbf{x}$|
 | $f_{\mathbf{\theta}}^{[l]}(\mathbf{x})$|$=\sigma\circ(\mathbf{W}^{[l-1]} f_{\mathbf{\theta}}^{[l-1]}(\mathbf{x}) + \mathbf{b}^{[l-1]})$,  $l$-th  layer output |
 | $f_{\mathbf{\theta}}(\mathbf{x})$|$=f_{\mathbf{\theta}}^{[L]}(\mathbf{x})=\mathbf{W}^{[L-1]} f_{\mathbf{\theta}}^{[L-1]}(\mathbf{x}) + \mathbf{b}^{[L-1]}$,  $L$-layer NN|
