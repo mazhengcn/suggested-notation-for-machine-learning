@@ -30,7 +30,7 @@ Dataset $S=\{\mathbf{z}_i\}^n_{i=1}=\{(\mathbf{x}_i,\mathbf{y}_i)\}^n_{i=1}$ is 
 
 Usually, $\mathcal{X}$ is a subset of $\mathbb{R}^d$ and $\mathcal{Y}$ is a subset of $\mathbb{R}^{d_\text{o}}$, where $d$ is the input dimension, $d_\text{o}$ is the ouput dimension.
 
-$n=\#S$ is the number of samples. Wihout specification, $S$ and $n$ are for the training set.
+$n=|S|$ is the number of samples. Wihout specification, $S$ and $n$ are for the training set.
 
 ## Function
 
