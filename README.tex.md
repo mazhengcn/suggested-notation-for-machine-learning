@@ -1,4 +1,4 @@
-# A Proposal on Standard Notations for Machine Learning
+# A Proposal on Standard Notation for Machine Learning
 
 > This introduces a suggestion of mathematical notation protocol for machine learning.
 
@@ -6,7 +6,7 @@ The field of machine learning is evolving rapidly in recent years. Communication
 
 ## Tabel of Contents
 
-- [A Proposal on Standard Notations for Machine Learning](#a-proposal-on-standard-notations-for-machine-learning)
+- [A Proposal on Standard Notation for Machine Learning](#a-proposal-on-standard-notation-for-machine-learning)
   - [Tabel of Contents](#tabel-of-contents)
   - [Dataset](#dataset)
   - [Function](#function)
@@ -62,7 +62,7 @@ $$
   L_{\mathcal{D}}(\mathbf{\theta})=\mathbb{E}_{\mathcal{D}}\ell(f_{\mathbf{\theta}}(\mathbf{x}),\mathbf{y})),
 $$
 
-where $\mathcal{z}=(\mathcal{x},\mathcal{y})$ follows the distribution $\mathcal{D}$.
+where $\mathbf{z}=(\mathbf{x},\mathbf{y})$ follows the distribution $\mathcal{D}$.
 
 ## Activation function
 
@@ -108,10 +108,10 @@ $$
   f^{[0]}_{\mathbf{\theta}}(\mathbf{x})=\mathbf{x},
 $$
 $$
-  f^{[l]}_{\mathbf{\theta}}(\mathbf{x})=\sigma\circ(\mathbf{W}^{[l-1]}f^{[l-1]}_{\mathbf{\theta}}(\mathbf{x})+\mathbf{b}^{[H]}), \quad 1\le l\le L-1,
+  f^{[l]}_{\mathbf{\theta}}(\mathbf{x})=\sigma\circ(\mathbf{W}^{[l-1]}f^{[l-1]}_{\mathbf{\theta}}(\mathbf{x})+\mathbf{b}^{[l-1]}), \quad 1\le l\le L-1,
 $$
 $$
-  f_{\mathbf{\theta}}(\mathbf{x})=f^{[L]}_{\mathbf{\theta}}(\mathbf{x})=\mathbf{W}^{[L-1]}f^{[L-1]}_{\mathbf{\theta}}(\mathbf{x})+\mathbf{b}^{[H]}, \quad 1\le l\le L-1.
+  f_{\mathbf{\theta}}(\mathbf{x})=f^{[L]}_{\mathbf{\theta}}(\mathbf{x})=\mathbf{W}^{[L-1]}f^{[L-1]}_{\mathbf{\theta}}(\mathbf{x})+\mathbf{b}^{[L-1]}, \quad 1\le l\le L-1.
 $$
 
 ## Complexity
