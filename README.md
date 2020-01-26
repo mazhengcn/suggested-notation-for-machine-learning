@@ -1,4 +1,4 @@
-# A Proposal on Standard Notations for Machine Learning
+# A Proposal on Standard Notation for Machine Learning
 
 > This introduces a suggestion of mathematical notation protocol for machine learning.
 
@@ -6,7 +6,7 @@ The field of machine learning is evolving rapidly in recent years. Communication
 
 ## Tabel of Contents
 
-- [A Proposal on Standard Notations for Machine Learning](#a-proposal-on-standard-notations-for-machine-learning)
+- [A Proposal on Standard Notation for Machine Learning](#a-proposal-on-standard-notation-for-machine-learning)
   - [Tabel of Contents](#tabel-of-contents)
   - [Dataset](#dataset)
   - [Function](#function)
@@ -58,7 +58,7 @@ The population risk or expected loss is denoted by
 
 <p align="center"><img src="/tex/c3b0bdd54fe608c69bd26ca6b16aebe2.svg?invert_in_darkmode&sanitize=true" align=middle width=174.2308986pt height=16.438356pt/></p>
 
-where <img src="/tex/7f322765b0fdc7bbcb3a37aa4c0406db.svg?invert_in_darkmode&sanitize=true" align=middle width=63.92684429999999pt height=24.65753399999998pt/> follows the distribution <img src="/tex/eaf85f2b753a4c7585def4cc7ecade43.svg?invert_in_darkmode&sanitize=true" align=middle width=13.13706569999999pt height=22.465723500000017pt/>.
+where <img src="/tex/02e9c08c82c033896f32f3bf6b2ebb59.svg?invert_in_darkmode&sanitize=true" align=middle width=70.62752894999998pt height=24.65753399999998pt/> follows the distribution <img src="/tex/eaf85f2b753a4c7585def4cc7ecade43.svg?invert_in_darkmode&sanitize=true" align=middle width=13.13706569999999pt height=22.465723500000017pt/>.
 
 ## Activation function
 
@@ -93,8 +93,8 @@ where <img src="/tex/865e70ab5839636feaab8a6745125c4a.svg?invert_in_darkmode&san
 This can also be defined recursively,
 
 <p align="center"><img src="/tex/60638ec6e9895b57f49ac860aa8d7c0f.svg?invert_in_darkmode&sanitize=true" align=middle width=83.85835424999999pt height=22.127694599999998pt/></p>
-<p align="center"><img src="/tex/2d8046e0c45a17f8106caac99543b6eb.svg?invert_in_darkmode&sanitize=true" align=middle width=391.89108089999996pt height=22.127694599999998pt/></p>
-<p align="center"><img src="/tex/845ee493a316f35f5cc48373f2ff5972.svg?invert_in_darkmode&sanitize=true" align=middle width=428.1467949pt height=22.127694599999998pt/></p>
+<p align="center"><img src="/tex/c6ed8c3c10c3702b34c8350acc55b0b8.svg?invert_in_darkmode&sanitize=true" align=middle width=401.2952526pt height=22.127694599999998pt/></p>
+<p align="center"><img src="/tex/668c8dfd4833fded1b6f21375b5454d0.svg?invert_in_darkmode&sanitize=true" align=middle width=442.34552009999993pt height=22.127694599999998pt/></p>
 
 ## Complexity
 
