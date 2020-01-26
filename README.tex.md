@@ -185,7 +185,7 @@ $L_S(\mathbf{\theta})$, $L_{n}(\mathbf{\theta})$, $\mathcal{R}_{n}(\mathbf{\thet
 | --------- | ------- | -------- | -------- |
 | $d$ | input dimension | `d` |  |
 | $d_{\text{o}}$ | output dimension |`d_{\rm o}` |  |
-| $m_l$ | the number of $l$th layer neuron, $m_0=d$, $m_{L} = d_{\rm o}$ | `m_l` |
+| $m_l$ | the number of $l$th layer neuron, $m_0=d$, $m_{L} = d_{\text{o}}$ | `m_l` |
 | $\mathbf{W}^{[l]}$ | the $l$th layer weight | `\bm{W}^{[l]}` | `\mathbf{W}^{[l]}` |
 | $\mathbf{b}^{[l]}$ | the $l$th layer bias term |`\bm{b}^{[l]}`| `\mathbf{b}^{[l]}` |
 | $\circ$ | entry-wise operation | `\circ` |
