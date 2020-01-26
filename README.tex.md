@@ -18,8 +18,6 @@ The field of machine learning is evolving rapidly in recent years. Communication
   - [Training](#training)
   - [Fourier Frequency](#fourier-frequency)
   - [Convolution](#convolution)
-  - [Notation table](#notation-table)
-  - [$L$-layer neural network](#mathsemanticsmrowmilmimrowannotation-encoding%22applicationx-tex%22lannotationsemanticsmathl-layer-neural-network)
 - [Acknowledgement](#acknowledgement)
 
 ## Dataset
@@ -91,7 +89,7 @@ $$
 
 ## General deep neural network
 
-The counting of the layer number excludes the input layer. A$L$-layer neural network is denoted by
+The counting of the layer number excludes the input layer. A $L$-layer neural network is denoted by
 $$
   f_{\mathbf{\theta}}(\mathbf{x})=\mathbf{W}^{[L-1]}\sigma\circ(\mathbf{W}^{[L-2]})\sigma\circ(\dots(\mathbf{W}^{[1]}\sigma\circ(\mathbf{W}^{[0]}\mathbf{x}+\mathbf{b}^{[0]})+\mathbf{b}^{[1]})\dots)+\mathbf{b}^{[L-2]})+\mathbf{b}^{[L-1]},
 $$
@@ -140,7 +138,7 @@ THe discretized frequency is denoted by $k$, and the continuous frequency is den
 
 The convolution operation is denoted by $*$.
 
-## Notation table
+<!-- ## Notation table
 
 | symbol | meaning | Latex | simplied |
 | --------- | --------- | --------- | --------- |
@@ -193,7 +191,7 @@ $L_S(\mathbf{\theta})$, $L_{n}(\mathbf{\theta})$, $\mathcal{R}_{n}(\mathbf{\thet
 | $\mathbf{\theta}$|$=(\mathbf{W}^{[0]},\ldots,\mathbf{W}^{[L-1]},\mathbf{b}^{[0]},\ldots,\mathbf{b}^{[L-1]})$,  parameters|`\bm{\theta}`|`\mathbf{\theta}`|
 | $f_{\mathbf{\theta}}^{[0]}(\mathbf{x})$|$=\mathbf{x}$|
 | $f_{\mathbf{\theta}}^{[l]}(\mathbf{x})$|$=\sigma\circ(\mathbf{W}^{[l-1]} f_{\mathbf{\theta}}^{[l-1]}(\mathbf{x}) + \mathbf{b}^{[l-1]})$,  $l$-th  layer output |
-| $f_{\mathbf{\theta}}(\mathbf{x})$|$=f_{\mathbf{\theta}}^{[L]}(\mathbf{x})=\mathbf{W}^{[L-1]} f_{\mathbf{\theta}}^{[L-1]}(\mathbf{x}) + \mathbf{b}^{[L-1]}$,  $L$-layer NN|
+| $f_{\mathbf{\theta}}(\mathbf{x})$|$=f_{\mathbf{\theta}}^{[L]}(\mathbf{x})=\mathbf{W}^{[L-1]} f_{\mathbf{\theta}}^{[L-1]}(\mathbf{x}) + \mathbf{b}^{[L-1]}$,  $L$-layer NN| -->
 
 # Acknowledgement
 
