@@ -19,7 +19,7 @@ The field of machine learning is evolving rapidly in recent years. Communication
   - [Fourier Frequency](#fourier-frequency)
   - [Convolution](#convolution)
   - [Notation table](#notation-table)
-  - [$\large L$-layer neural network](#mathsemanticsmrowmstyle-mathsize%2212em%22milmimstylemrowannotation-encoding%22applicationx-tex%22large-lannotationsemanticsmathl-layer-neural-network)
+  - [$L$-layer neural network](#mathsemanticsmrowmilmimrowannotation-encoding%22applicationx-tex%22lannotationsemanticsmathl-layer-neural-network)
 - [Acknowledgement](#acknowledgement)
 
 ## Dataset
@@ -179,7 +179,7 @@ $L_S(\mathbf{\theta})$, $L_{n}(\mathbf{\theta})$, $\mathcal{R}_{n}(\mathbf{\thet
 | $\mathbf{\xi}$ | continuous frequency | `\bm{\xi}` | `\mathbf{x}i` | |
 | $*$ | convolution operation | `*` |
 
-## $\large L$-layer neural network
+## $L$-layer neural network
 
 | symbol | meaning | Latex | simplied |
 | --------- | ------- | -------- | -------- |
