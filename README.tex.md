@@ -70,10 +70,10 @@ Activation function is denoted by $\sigma(x)$.
 
 **Example 1**. Some commonly used activation functions are
 
-- $\sigma(z)=\text{ReLU}(x)=\text{max}(0,x)$
-- $\sigma(z)=\text{sigmoid}(z)=\dfrac{1}{1+e^{-x}}$
-- $\sigma(z)=\tanh(x)$
-- $\sigma(z)=\cos x, \sin x$
+- $\sigma(x)=\text{ReLU}(x)=\text{max}(0,x)$
+- $\sigma(x)=\text{sigmoid}(x)=\dfrac{1}{1+e^{-x}}$
+- $\sigma(x)=\tanh(x)$
+- $\sigma(x)=\cos x, \sin x$
 
 ## Two-layer neural network
 
@@ -182,7 +182,7 @@ $L_S(\mathbf{\theta})$, $L_{n}(\mathbf{\theta})$, $\mathcal{R}_{n}(\mathbf{\thet
 ## L-layer neural network
 
 | symbol | meaning | Latex | simplied |
-| --------- | ------- | -------- | -------- |
+| --------- | --------- | --------- | --------- |
 | $d$ | input dimension | `d` |  |
 | $d_{\text{o}}$ | output dimension |`d_{\rm o}` |  |
 | $m_l$ | the number of $l$th layer neuron, $m_0=d$, $m_{L} = d_{\text{o}}$ | `m_l` |
