@@ -177,8 +177,8 @@ $L_S(\mathbf{\theta})$, $L_{n}(\mathbf{\theta})$, $\mathcal{R}_{n}(\mathbf{\thet
 | $\text{VCdim}(\mathcal{H}$) | VC-dimension of $\mathcal{H}$ |
 | $\text{Rad}(\mathcal{H}\circ S)$, $\text{Rad}_{S}(\mathcal{H})$| Rademacher complexity of $\mathcal{H}$ on $S$|
 | ${\rm Rad}_{n} (\mathcal{H})$| Rademacher complexity over samples of size $n$ |
-| GD| gradient descent |
-| SGD | stochastic gradient descent |
+| $\text{GD}$ | gradient descent |
+| $\text{SGD}$ | stochastic gradient descent |
 | $B$ | a batch set | `B` |
 | $b$ | batch size | `b` |
 | $\eta$ | learning rate |`\eta`|
