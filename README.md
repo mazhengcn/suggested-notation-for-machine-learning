@@ -1,3 +1,10 @@
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
 # A Proposal on Standard Notation for Machine Learning
 
 > This introduces a suggestion of mathematical notation protocol for machine learning.
@@ -20,7 +27,7 @@ The field of machine learning is evolving rapidly in recent years. Communication
   - [Convolution](#convolution)
   - [Notation table](#notation-table)
   - [L-layer neural network](#l-layer-neural-network)
-- [Acknowledgement](#acknowledgement)
+- [Acknowledgements](#acknowledgements)
 
 ## Dataset
 
@@ -150,8 +157,8 @@ The convolution operation is denoted by <img src="/tex/7c74eeb32158ff7c4f67d191b
 | <img src="/tex/cbd1997a81f60dcf0dee49de0a6b2916.svg?invert_in_darkmode&sanitize=true" align=middle width=71.57555459999999pt height=24.65753399999998pt/>) | VC-dimension of <img src="/tex/8209c0f8b3c5233ea2e20dae55588c43.svg?invert_in_darkmode&sanitize=true" align=middle width=14.041179899999989pt height=22.465723500000017pt/> |
 | <img src="/tex/fb31f87b5e59405971bf46febe5cf39a.svg?invert_in_darkmode&sanitize=true" align=middle width=82.83105434999999pt height=24.65753399999998pt/>, <img src="/tex/a97f52c5cd9cca059cf894cda88dd8fa.svg?invert_in_darkmode&sanitize=true" align=middle width=65.80156769999999pt height=24.65753399999998pt/>| Rademacher complexity of <img src="/tex/8209c0f8b3c5233ea2e20dae55588c43.svg?invert_in_darkmode&sanitize=true" align=middle width=14.041179899999989pt height=22.465723500000017pt/> on <img src="/tex/e257acd1ccbe7fcb654708f1a866bfe9.svg?invert_in_darkmode&sanitize=true" align=middle width=11.027402099999989pt height=22.465723500000017pt/>|
 | <img src="/tex/63a818f7e0cbcc1f4187230c7a542414.svg?invert_in_darkmode&sanitize=true" align=middle width=65.22664169999999pt height=24.65753399999998pt/>| Rademacher complexity over samples of size <img src="/tex/55a049b8f161ae7cfeb0197d75aff967.svg?invert_in_darkmode&sanitize=true" align=middle width=9.86687624999999pt height=14.15524440000002pt/> |
-| GD| gradient descent |
-| SGD | stochastic gradient descent |
+| <img src="/tex/78bdfab9732d8b1d617479143855bbe5.svg?invert_in_darkmode&sanitize=true" align=middle width=25.45669169999999pt height=22.465723500000017pt/> | gradient descent |
+| <img src="/tex/5075db15f12da3130c3137c0b7da7111.svg?invert_in_darkmode&sanitize=true" align=middle width=34.58913974999999pt height=22.465723500000017pt/> | stochastic gradient descent |
 | <img src="/tex/61e84f854bc6258d4108d08d4c4a0852.svg?invert_in_darkmode&sanitize=true" align=middle width=13.29340979999999pt height=22.465723500000017pt/> | a batch set | `B` |
 | <img src="/tex/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg?invert_in_darkmode&sanitize=true" align=middle width=7.054796099999991pt height=22.831056599999986pt/> | batch size | `b` |
 | <img src="/tex/1d0496971a2775f4887d1df25cea4f7e.svg?invert_in_darkmode&sanitize=true" align=middle width=8.751954749999989pt height=14.15524440000002pt/> | learning rate |`\eta`|
@@ -175,6 +182,6 @@ The convolution operation is denoted by <img src="/tex/7c74eeb32158ff7c4f67d191b
 | <img src="/tex/1388c6341f8133d3f2a6cab8a915880a.svg?invert_in_darkmode&sanitize=true" align=middle width=45.06860819999999pt height=34.337843099999986pt/>|<img src="/tex/e3f16cf9944326af1449c40e03c01159.svg?invert_in_darkmode&sanitize=true" align=middle width=226.56959984999997pt height=34.337843099999986pt/>,  <img src="/tex/2f2322dff5bde89c37bcae4116fe20a8.svg?invert_in_darkmode&sanitize=true" align=middle width=5.2283516999999895pt height=22.831056599999986pt/>-th  layer output |
 | <img src="/tex/6cec5e8c8ed76bb809fd3d23b5afb245.svg?invert_in_darkmode&sanitize=true" align=middle width=38.24770454999999pt height=24.65753399999998pt/>|<img src="/tex/fa0265e13fc6050820383d31af4148a2.svg?invert_in_darkmode&sanitize=true" align=middle width=273.61889444999997pt height=34.337843099999986pt/>,  <img src="/tex/ddcb483302ed36a59286424aa5e0be17.svg?invert_in_darkmode&sanitize=true" align=middle width=11.18724254999999pt height=22.465723500000017pt/>-layer NN|
 
-# Acknowledgement
+# Acknowledgements
 
 Chenglong Bao (Tsinghua), Zhengdao Chen (NYU), Bin Dong (Peking), Weinan E (Princeton),  Quanquan Gu (UCLA), Kaizhu Huang (XJTLU), Jian Li (Tsinghua), Lei Li (SJTU), Tiejun Li (Peking),   Zhenguo Li (Huawei), Zhemin Li (NUDT), Shaobo Lin (XJTU), Ziqi Liu (CSRC),  Zichao Long (Peking), Tao Luo (Purdue), Chao Ma (Princeton),  Chao Ma (SJTU), Yuheng Ma (WHU),  Zheng Ma (Purdue),   Dengyu Meng (XJTU), Wang Miao (Peking),  Pingbing Ming (CAS), Zuoqiang Shi (Tsinghua), Jihong Wang (CSRC), Liwei Wang (Peking), Zhiqin Xu (SJTU), Zhouwang Yang (USTC),  Haijun Yu (CAS),  Yang Yuan  (Tsinghua),  Cheng Zhang (Peking),  Lulu Zhang (SJTU), Jiwei Zhang  (WHU),   Pingwen Zhang (Peking), Xiaoqun Zhang (SJTU), Yaoyu Zhang (IAS),  Chengchao Zhao (CSRC), Zhanxing Zhu (Peking), Chuan Zhou (CAS),  Xiang Zhou (cityU).
