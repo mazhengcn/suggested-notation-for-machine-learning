@@ -6,6 +6,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{xcolor}
+\usepackage{booktabs}
 
 \usepackage{zymacros}
 \newcommand{\red}[1]{{\color{red}#1}}
@@ -142,10 +143,10 @@ The convolution operation is denoted by $*$.
 \newpage
 \section{Notation table}~\\
 \begin{center}
-    \begin{tabular}{l|l|l|l}
-        \hline
+    \begin{tabular}{llll}
+        \toprule
         symbol & meaning & \LaTeX & simplied\\
-        \hline
+        \midrule
 
         $\vx$ & input & \verb!\bm{x}! & \verb!\vx! \\
         $\vy$ & output, label & \verb!\bm{y}! & \verb!\vy! \\
@@ -184,16 +185,17 @@ The convolution operation is denoted by $*$.
         $\vk$&discretized frequency&\verb!\bm{k}!&\verb!\vk!\\
         $\vxi$&continuous frequency&\verb!\bm{\xi}!&\verb!\vxi!\\
         $*$&convolution operation &\verb!*!\\
+        \bottomrule
     \end{tabular}
 \end{center}
 
 \newpage
 \section{$L$-layer neural network}~\\
 \begin{center}
-    \begin{tabular}{l|l|l|l}
-        \hline
+    \begin{tabular}{llll}
+        \toprule
         symbol & meaning & \LaTeX & simplied\\
-        \hline
+        \midrule
         $d$ & input dimension & \verb!d! &  \\
         $d_{\rm o}$ & output dimension &\verb!d_{\rm o}! &  \\
         $m_l$& the number of $l$th layer neuron, $m_0=d$, $m_{L} = d_{\rm o}$&\verb!m_l!\\
@@ -205,7 +207,7 @@ The convolution operation is denoted by $*$.
         $f_{\vtheta}^{[0]}(\vx)$&$=\vx$\\
         $f_{\vtheta}^{[l]}(\vx)$&$=\sigma\circ(\mW^{[l-1]} f_{\vtheta}^{[l-1]}(\vx) + \vb^{[l-1]})$,  $l$-th  layer output \\
          $f_{\vtheta}(\vx)$&$=f_{\vtheta}^{[L]}(\vx)=\mW^{[L-1]} f_{\vtheta}^{[L-1]}(\vx) + \vb^{[L-1]}$,  $L$-layer NN\\
-    
+        \bottomrule
     \end{tabular}
 \end{center}
 
