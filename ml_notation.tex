@@ -1,4 +1,4 @@
-\documentclass[]{article}
+\documentclass{article}
 \usepackage{geometry}
 \usepackage{amsmath}
 \usepackage{amsthm}
@@ -7,11 +7,9 @@
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{booktabs}
+\usepackage[scheme=plain]{ctex}
 
 \usepackage{zymacros}
-\newcommand{\red}[1]{{\color{red}#1}}
-\newcommand{\bl}[1]{{\color{blue}#1}}
-\newcommand{\pl}[1]{{\color{purple}#1}}
 %%%%%%%%%%%%%%%%%%%%%%%
 % \NewDocumentCommand{\tens}{t_}
 %  {%
@@ -28,8 +26,8 @@
 
 \begin{document}
 
-\title{Suggested Notation for Machine Learning}
-\author{}
+\title{Suggested Notation for Machine Learning \thanks{This document is published by Beijing Academy of Artificial Intelligence (北京智源人工智能研究院) jointly with Peking University (北京大学) and Shanghai Jiao Tong University (上海交通大学).}}
+\author{Zhi-Qin John Xu\thanks{Corresponding: xuzhiqin@sjtu.edu.cn, Shanghai Jiao Tong University.}, Tao Luo\thanks{Purdue University}, Zheng Ma\thanks{Purdue University}, Yaoyu Zhang\thanks{Institute for Advanced Study}}
 
 \maketitle 
 %\date{\today}
@@ -179,7 +177,7 @@ The convolution operation is denoted by $*$.
         GD& gradient descent\\
         SGD &stochastic gradient descent\\
         $B$&a batch set&\verb!B!\\
-        $b$&batch size&\verb!b!\\
+        $|B|$&batch size&\verb!b!\\
         $\eta$&learning rate&\verb!\eta!\\
         %$K_n$&Gram matrix&\verb!K_n!\\
         $\vk$&discretized frequency&\verb!\bm{k}!&\verb!\vk!\\
@@ -213,7 +211,7 @@ The convolution operation is denoted by $*$.
 
 \newpage
 \section{Acknowledgements}
-Chenglong Bao (Tsinghua), Zhengdao Chen (NYU), Bin Dong (Peking), Weinan E (Princeton),  Quanquan Gu (UCLA), Kaizhu Huang (XJTLU), Jian Li (Tsinghua), Lei Li (SJTU), Tiejun Li (Peking),   Zhenguo Li (Huawei), Zhemin Li (NUDT), Shaobo Lin (XJTU), Ziqi Liu (CSRC),  Zichao Long (Peking), Tao Luo (Purdue), Chao Ma (Princeton),  Chao Ma (SJTU), Yuheng Ma (WHU),  Zheng Ma (Purdue),   Dengyu Meng (XJTU), Wang Miao (Peking),  Pingbing Ming (CAS), Zuoqiang Shi (Tsinghua), Jihong Wang (CSRC), Liwei Wang (Peking), Zhiqin Xu (SJTU), Zhouwang Yang (USTC),  Haijun Yu (CAS),  Yang Yuan  (Tsinghua),  Cheng Zhang (Peking),  Lulu Zhang (SJTU), Jiwei Zhang  (WHU),   Pingwen Zhang (Peking), Xiaoqun Zhang (SJTU), Yaoyu Zhang (IAS),  Chengchao Zhao (CSRC), Zhanxing Zhu (Peking), Chuan Zhou (CAS),  Xiang Zhou (cityU),  
+Chenglong Bao (Tsinghua), Zhengdao Chen (NYU), Bin Dong (Peking), Weinan E (Princeton),  Quanquan Gu (UCLA), Kaizhu Huang (XJTLU), Shi Jin (SJTU), Jian Li (Tsinghua), Lei Li (SJTU), Tiejun Li (Peking),   Zhenguo Li (Huawei), Zhemin Li (NUDT), Shaobo Lin (XJTU), Ziqi Liu (CSRC),  Zichao Long (Peking), Chao Ma (Princeton),  Chao Ma (SJTU), Yuheng Ma (WHU),    Dengyu Meng (XJTU), Wang Miao (Peking),  Pingbing Ming (CAS), Zuoqiang Shi (Tsinghua), Jihong Wang (CSRC), Liwei Wang (Peking), Bican Xia (Peking), Zhouwang Yang (USTC),  Haijun Yu (CAS),  Yang Yuan  (Tsinghua),  Cheng Zhang (Peking),  Lulu Zhang (SJTU), Jiwei Zhang  (WHU),   Pingwen Zhang (Peking), Xiaoqun Zhang (SJTU),  Chengchao Zhao (CSRC), Zhanxing Zhu (Peking), Chuan Zhou (CAS),  Xiang Zhou (cityU). 
 
 
 
