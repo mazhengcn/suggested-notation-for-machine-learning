@@ -1,4 +1,4 @@
-# A Proposal on Standard Notation for Machine Learning
+# Suggested Notation for Machine Learning
 
 > This introduces a suggestion of mathematical notation protocol for machine learning.
 
@@ -128,7 +128,7 @@ $$
 
 The Gradient Descent is oftern denoted by GD. THe Stochastic Gradient Descent is often denoted by SGD.
 
-A batch set is denoted by $B$ and the batch size is denoted by $b$.
+A batch set is denoted by $B$ and the batch size is denoted by $|B|$.
 
 The learning rate is denoted by $\eta$.
 
@@ -173,7 +173,7 @@ $L_S(\mathbf{\theta})$, $L_{n}(\mathbf{\theta})$, $\mathcal{R}_{n}(\mathbf{\thet
 | $\text{GD}$ | gradient descent |
 | $\text{SGD}$ | stochastic gradient descent |
 | $B$ | a batch set | `B` |
-| $b$ | batch size | `b` |
+| $\B|$ | batch size | `b` |
 | $\eta$ | learning rate |`\eta`|
 | $\mathbf{k}$ | discretized frequency | `\bm{k}` | `\mathbf{k}` |
 | $\mathbf{\xi}$ | continuous frequency | `\bm{\xi}` | `\mathbf{x}i` | |
@@ -197,4 +197,4 @@ $L_S(\mathbf{\theta})$, $L_{n}(\mathbf{\theta})$, $\mathcal{R}_{n}(\mathbf{\thet
 
 # Acknowledgements
 
-Chenglong Bao (Tsinghua), Zhengdao Chen (NYU), Bin Dong (Peking), Weinan E (Princeton),  Quanquan Gu (UCLA), Kaizhu Huang (XJTLU), Jian Li (Tsinghua), Lei Li (SJTU), Tiejun Li (Peking),   Zhenguo Li (Huawei), Zhemin Li (NUDT), Shaobo Lin (XJTU), Ziqi Liu (CSRC),  Zichao Long (Peking), Tao Luo (Purdue), Chao Ma (Princeton),  Chao Ma (SJTU), Yuheng Ma (WHU),  Zheng Ma (Purdue),   Dengyu Meng (XJTU), Wang Miao (Peking),  Pingbing Ming (CAS), Zuoqiang Shi (Tsinghua), Jihong Wang (CSRC), Liwei Wang (Peking), Zhiqin Xu (SJTU), Zhouwang Yang (USTC),  Haijun Yu (CAS),  Yang Yuan  (Tsinghua),  Cheng Zhang (Peking),  Lulu Zhang (SJTU), Jiwei Zhang  (WHU),   Pingwen Zhang (Peking), Xiaoqun Zhang (SJTU), Yaoyu Zhang (IAS),  Chengchao Zhao (CSRC), Zhanxing Zhu (Peking), Chuan Zhou (CAS),  Xiang Zhou (cityU).
+Chenglong Bao (Tsinghua), Zhengdao Chen (NYU), Bin Dong (Peking), Weinan E (Princeton),  Quanquan Gu (UCLA), Kaizhu Huang (XJTLU), Shi Jin (SJTU), Jian Li (Tsinghua), Lei Li (SJTU), Tiejun Li (Peking),   Zhenguo Li (Huawei), Zhemin Li (NUDT), Shaobo Lin (XJTU), Ziqi Liu (CSRC),  Zichao Long (Peking), Chao Ma (Princeton),  Chao Ma (SJTU), Yuheng Ma (WHU),    Dengyu Meng (XJTU), Wang Miao (Peking),  Pingbing Ming (CAS), Zuoqiang Shi (Tsinghua), Jihong Wang (CSRC), Liwei Wang (Peking), Bican Xia (Peking), Zhouwang Yang (USTC),  Haijun Yu (CAS),  Yang Yuan  (Tsinghua),  Cheng Zhang (Peking),  Lulu Zhang (SJTU), Jiwei Zhang  (WHU),   Pingwen Zhang (Peking), Xiaoqun Zhang (SJTU),  Chengchao Zhao (CSRC), Zhanxing Zhu (Peking), Chuan Zhou (CAS),  Xiang Zhou (cityU). 
