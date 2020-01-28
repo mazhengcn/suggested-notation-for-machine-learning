@@ -1,4 +1,4 @@
-# A Proposal on Standard Notation for Machine Learning
+# Suggested Notation for Machine Learning
 
 > This introduces a suggestion of mathematical notation protocol for machine learning.
 
@@ -108,7 +108,7 @@ The Rademacher complexity of a hypothesis space <img src="/tex/8209c0f8b3c5233ea
 
 The Gradient Descent is oftern denoted by GD. THe Stochastic Gradient Descent is often denoted by SGD.
 
-A batch set is denoted by <img src="/tex/61e84f854bc6258d4108d08d4c4a0852.svg?invert_in_darkmode&sanitize=true" align=middle width=13.29340979999999pt height=22.465723500000017pt/> and the batch size is denoted by <img src="/tex/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg?invert_in_darkmode&sanitize=true" align=middle width=7.054796099999991pt height=22.831056599999986pt/>.
+A batch set is denoted by <img src="/tex/61e84f854bc6258d4108d08d4c4a0852.svg?invert_in_darkmode&sanitize=true" align=middle width=13.29340979999999pt height=22.465723500000017pt/> and the batch size is denoted by <img src="/tex/007b57eceda75cfb83dcf22bd67fada1.svg?invert_in_darkmode&sanitize=true" align=middle width=22.42585124999999pt height=24.65753399999998pt/>.
 
 The learning rate is denoted by <img src="/tex/1d0496971a2775f4887d1df25cea4f7e.svg?invert_in_darkmode&sanitize=true" align=middle width=8.751954749999989pt height=14.15524440000002pt/>.
 
@@ -153,7 +153,7 @@ The convolution operation is denoted by <img src="/tex/7c74eeb32158ff7c4f67d191b
 | <img src="/tex/78bdfab9732d8b1d617479143855bbe5.svg?invert_in_darkmode&sanitize=true" align=middle width=25.45669169999999pt height=22.465723500000017pt/> | gradient descent |
 | <img src="/tex/5075db15f12da3130c3137c0b7da7111.svg?invert_in_darkmode&sanitize=true" align=middle width=34.58913974999999pt height=22.465723500000017pt/> | stochastic gradient descent |
 | <img src="/tex/61e84f854bc6258d4108d08d4c4a0852.svg?invert_in_darkmode&sanitize=true" align=middle width=13.29340979999999pt height=22.465723500000017pt/> | a batch set | `B` |
-| <img src="/tex/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg?invert_in_darkmode&sanitize=true" align=middle width=7.054796099999991pt height=22.831056599999986pt/> | batch size | `b` |
+| <img src="/tex/594312d6ed7a82116746ac4f826b6095.svg?invert_in_darkmode&sanitize=true" align=middle width=4.5662248499999905pt height=24.65753399999998pt/> | batch size | `b` |
 | <img src="/tex/1d0496971a2775f4887d1df25cea4f7e.svg?invert_in_darkmode&sanitize=true" align=middle width=8.751954749999989pt height=14.15524440000002pt/> | learning rate |`\eta`|
 | <img src="/tex/9d152c065089da4147fb86e392670ac8.svg?invert_in_darkmode&sanitize=true" align=middle width=9.97711604999999pt height=22.831056599999986pt/> | discretized frequency | `\bm{k}` | `\mathbf{k}` |
 | <img src="/tex/8107e598d348f99cde7fc8b59875b9b0.svg?invert_in_darkmode&sanitize=true" align=middle width=7.94809454999999pt height=22.831056599999986pt/> | continuous frequency | `\bm{\xi}` | `\mathbf{x}i` | |
@@ -177,4 +177,4 @@ The convolution operation is denoted by <img src="/tex/7c74eeb32158ff7c4f67d191b
 
 # Acknowledgements
 
-Chenglong Bao (Tsinghua), Zhengdao Chen (NYU), Bin Dong (Peking), Weinan E (Princeton),  Quanquan Gu (UCLA), Kaizhu Huang (XJTLU), Jian Li (Tsinghua), Lei Li (SJTU), Tiejun Li (Peking),   Zhenguo Li (Huawei), Zhemin Li (NUDT), Shaobo Lin (XJTU), Ziqi Liu (CSRC),  Zichao Long (Peking), Tao Luo (Purdue), Chao Ma (Princeton),  Chao Ma (SJTU), Yuheng Ma (WHU),  Zheng Ma (Purdue),   Dengyu Meng (XJTU), Wang Miao (Peking),  Pingbing Ming (CAS), Zuoqiang Shi (Tsinghua), Jihong Wang (CSRC), Liwei Wang (Peking), Zhiqin Xu (SJTU), Zhouwang Yang (USTC),  Haijun Yu (CAS),  Yang Yuan  (Tsinghua),  Cheng Zhang (Peking),  Lulu Zhang (SJTU), Jiwei Zhang  (WHU),   Pingwen Zhang (Peking), Xiaoqun Zhang (SJTU), Yaoyu Zhang (IAS),  Chengchao Zhao (CSRC), Zhanxing Zhu (Peking), Chuan Zhou (CAS),  Xiang Zhou (cityU).
+Chenglong Bao (Tsinghua), Zhengdao Chen (NYU), Bin Dong (Peking), Weinan E (Princeton),  Quanquan Gu (UCLA), Kaizhu Huang (XJTLU), Shi Jin (SJTU), Jian Li (Tsinghua), Lei Li (SJTU), Tiejun Li (Peking),   Zhenguo Li (Huawei), Zhemin Li (NUDT), Shaobo Lin (XJTU), Ziqi Liu (CSRC),  Zichao Long (Peking), Chao Ma (Princeton),  Chao Ma (SJTU), Yuheng Ma (WHU),    Dengyu Meng (XJTU), Wang Miao (Peking),  Pingbing Ming (CAS), Zuoqiang Shi (Tsinghua), Jihong Wang (CSRC), Liwei Wang (Peking), Bican Xia (Peking), Zhouwang Yang (USTC),  Haijun Yu (CAS),  Yang Yuan  (Tsinghua),  Cheng Zhang (Peking),  Lulu Zhang (SJTU), Jiwei Zhang  (WHU),   Pingwen Zhang (Peking), Xiaoqun Zhang (SJTU),  Chengchao Zhao (CSRC), Zhanxing Zhu (Peking), Chuan Zhou (CAS),  Xiang Zhou (cityU). 
