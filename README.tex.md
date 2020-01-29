@@ -6,7 +6,7 @@ The field of machine learning is evolving rapidly in recent years. Communication
 
 ## Tabel of Contents
 
-- [A Proposal on Standard Notation for Machine Learning](#a-proposal-on-standard-notation-for-machine-learning)
+- [Suggested Notation for Machine Learning](#suggested-notation-for-machine-learning)
   - [Tabel of Contents](#tabel-of-contents)
   - [Dataset](#dataset)
   - [Function](#function)
@@ -172,8 +172,8 @@ $L_S(\mathbf{\theta})$, $L_{n}(\mathbf{\theta})$, $\mathcal{R}_{n}(\mathbf{\thet
 | ${\rm Rad}_{n} (\mathcal{H})$| Rademacher complexity over samples of size $n$ |
 | $\text{GD}$ | gradient descent |
 | $\text{SGD}$ | stochastic gradient descent |
-| $B$ | a batch set | `B` |
-| $\B|$ | batch size | `b` |
+| $B$ | a batch set | `B` | |
+| $\vert B\vert$ | batch size | `b` | |
 | $\eta$ | learning rate |`\eta`|
 | $\mathbf{k}$ | discretized frequency | `\bm{k}` | `\mathbf{k}` |
 | $\mathbf{\xi}$ | continuous frequency | `\bm{\xi}` | `\mathbf{x}i` | |
