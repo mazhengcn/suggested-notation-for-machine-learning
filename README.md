@@ -6,7 +6,7 @@ The field of machine learning is evolving rapidly in recent years. Communication
 
 ## Tabel of Contents
 
-- [A Proposal on Standard Notation for Machine Learning](#a-proposal-on-standard-notation-for-machine-learning)
+- [Suggested Notation for Machine Learning](#suggested-notation-for-machine-learning)
   - [Tabel of Contents](#tabel-of-contents)
   - [Dataset](#dataset)
   - [Function](#function)
@@ -152,8 +152,8 @@ The convolution operation is denoted by <img src="/tex/7c74eeb32158ff7c4f67d191b
 | <img src="/tex/63a818f7e0cbcc1f4187230c7a542414.svg?invert_in_darkmode&sanitize=true" align=middle width=65.22664169999999pt height=24.65753399999998pt/>| Rademacher complexity over samples of size <img src="/tex/55a049b8f161ae7cfeb0197d75aff967.svg?invert_in_darkmode&sanitize=true" align=middle width=9.86687624999999pt height=14.15524440000002pt/> |
 | <img src="/tex/78bdfab9732d8b1d617479143855bbe5.svg?invert_in_darkmode&sanitize=true" align=middle width=25.45669169999999pt height=22.465723500000017pt/> | gradient descent |
 | <img src="/tex/5075db15f12da3130c3137c0b7da7111.svg?invert_in_darkmode&sanitize=true" align=middle width=34.58913974999999pt height=22.465723500000017pt/> | stochastic gradient descent |
-| <img src="/tex/61e84f854bc6258d4108d08d4c4a0852.svg?invert_in_darkmode&sanitize=true" align=middle width=13.29340979999999pt height=22.465723500000017pt/> | a batch set | `B` |
-| <img src="/tex/594312d6ed7a82116746ac4f826b6095.svg?invert_in_darkmode&sanitize=true" align=middle width=4.5662248499999905pt height=24.65753399999998pt/> | batch size | `b` |
+| <img src="/tex/61e84f854bc6258d4108d08d4c4a0852.svg?invert_in_darkmode&sanitize=true" align=middle width=13.29340979999999pt height=22.465723500000017pt/> | a batch set | `B` | |
+| <img src="/tex/3c9e5bf9e3b2b5ea9e304df25541f33c.svg?invert_in_darkmode&sanitize=true" align=middle width=22.42585124999999pt height=24.65753399999998pt/> | batch size | `b` | |
 | <img src="/tex/1d0496971a2775f4887d1df25cea4f7e.svg?invert_in_darkmode&sanitize=true" align=middle width=8.751954749999989pt height=14.15524440000002pt/> | learning rate |`\eta`|
 | <img src="/tex/9d152c065089da4147fb86e392670ac8.svg?invert_in_darkmode&sanitize=true" align=middle width=9.97711604999999pt height=22.831056599999986pt/> | discretized frequency | `\bm{k}` | `\mathbf{k}` |
 | <img src="/tex/8107e598d348f99cde7fc8b59875b9b0.svg?invert_in_darkmode&sanitize=true" align=middle width=7.94809454999999pt height=22.831056599999986pt/> | continuous frequency | `\bm{\xi}` | `\mathbf{x}i` | |
