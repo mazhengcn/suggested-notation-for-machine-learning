@@ -154,7 +154,7 @@ The convolution operation is denoted by $*$.
 | $\mathcal{H}$| hypothesis space (a set)| `\mathcal{H}` | `\mathcal{H}` |
 | $\mathbf{\theta}$ | a set of parameters | `\bm{\theta}` | `\mathbf{\theta}` |
 | $f_{\mathbf{\theta}}: \mathcal{X}\to\mathcal{Y}$ | hypothesis function | `\f_{\bm{\theta}}` | `f_{\mathbf{\theta}}` |
-| $f$ or $f^*: \mathcal{X}\to\mathcal{Y}$ | target function  | `f,f^*` |
+| $f$ or $f^*: \mathcal{X}\to\mathcal{Y}$ | target function  | `f, f^*` |
 | $\ell:\mathcal{H}\times \mathcal{Z}\to \mathbb{R}^+$ | loss function | `\ell` |
 | $\mathcal{D}$ | distribution of $\mathcal{Z}$ | `\mathcal{D}` | `\fD` |
 | $S=\{\mathbf{z}_i\}_{i=1}^n$ | $=\{(\mathbf{x}_i,\mathbf{y}_i)\}_{i=1}^n$ sample set |
@@ -175,7 +175,7 @@ $L_S(\mathbf{\theta})$, $L_{n}(\mathbf{\theta})$, $R_n(\mathbf{\theta})$, $R_S(\
 | $\vert B\vert$ | batch size | `b` | |
 | $\eta$ | learning rate |`\eta`|
 | $\mathbf{k}$ | discretized frequency | `\bm{k}` | `\mathbf{k}` |
-| $\mathbf{\xi}$ | continuous frequency | `\bm{\xi}` | `\mathbf{x}i` | |
+| $\mathbf{\xi}$ | continuous frequency | `\bm{\xi}` | `\mathbf{xi}` | |
 | $*$ | convolution operation | `*` |
 
 ## L-layer neural network
