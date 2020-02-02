@@ -48,15 +48,14 @@ A loss function, denoted by $\ell:\mathcal{H}\times\mathcal{Z}\to\mathbb{R}_{+}:
 
 - $L^2$ loss: $\ell(f_{\mathbf{\theta}},\mathbf{z})=(f_{\mathbf{\theta}}(\mathbf{x})-\mathbf{y})^2$, where $\mathbf{z}=(\mathbf{x},\mathbf{y})$. $\ell(f_{\mathbf{\theta}},\mathbf{z})$ can also be written as $\ell(f_{\mathbf{\theta}},\mathbf{y}))$ for convenience.
 
-Empirical risk or training loss for a set $S=\{(\mathbf{x_i},\mathbf{y_i})\}^n_{i=1}$ is denoted by $L_S(\mathbf{\theta})$ or $L_n(\mathbf{\theta})$ or $\mathcal{R}_S(\mathbf{\theta})$ or $\mathcal{R}_n(\mathbf{\theta})$,
+Empirical risk or training loss for a set $S=\{(\mathbf{x_i},\mathbf{y_i})\}^n_{i=1}$ is denoted by $L_S(\mathbf{\theta})$ or $L_n(\mathbf{\theta})$ or $R_S(\mathbf{\theta})$ or $R_n(\mathbf{\theta})$,
 
 $$
   L_S(\mathbf{\theta})=\frac{1}{n}\sum^n_{i=1}\ell(f_{\mathbf{\theta}}(\mathbf{x}_i),\mathbf{y}_i).
 $$
+ 
 
-Without ambiguity, $L$ is also used for $L_S$.
-
-The population risk or expected loss is denoted by
+The population risk or expected loss is denoted by $L_{\mathcal{D}}$ or $R_{\mathcal{D}}$,
 
 $$
   L_{\mathcal{D}}(\mathbf{\theta})=\mathbb{E}_{\mathcal{D}}\ell(f_{\mathbf{\theta}}(\mathbf{x}),\mathbf{y})),
