@@ -158,7 +158,7 @@ The convolution operation is denoted by $*$.
 | $\ell:\mathcal{H}\times \mathcal{Z}\to \mathbb{R}^+$ | loss function | `\ell` |
 | $\mathcal{D}$ | distribution of $\mathcal{Z}$ | `\mathcal{D}` | `\fD` |
 | $S=\{\mathbf{z}_i\}_{i=1}^n$ | $=\{(\mathbf{x}_i,\mathbf{y}_i)\}_{i=1}^n$ sample set |
-$L_S(\mathbf{\theta})$, $L_{n}(\mathbf{\theta})$, $\mathcal{R}_{n}(\mathbf{\theta})$, $\mathcal{R}_{S}(\mathbf{\theta})$ | empirical risk or training loss |
+$L_S(\mathbf{\theta})$, $L_{n}(\mathbf{\theta})$, $R_n(\mathbf{\theta})$, $R_S(\mathbf{\theta})$ | empirical risk or training loss |
 | $L_D(\mathbf{\theta})$ | population risk or expected loss |
 | $\sigma:\mathbb{R}\to\mathbb{R}^+$| activation function | `\sigma` |
 | $\mathbf{w}_j$ | input weight | `\bm{w}_j` | `\mathbf{w}_j` |
