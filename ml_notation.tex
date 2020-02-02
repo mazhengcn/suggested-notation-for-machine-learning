@@ -48,14 +48,14 @@ $\fX$ is a subset of $\sR^d$ and $\fY$ is a subset of $\sR^{d_{o}}$, where $d$ i
 $n=\#S$ is the number of samples. Without specification, $S$ and $n$ are for the training set.
 
 \section{Function}~\\
-Hypothesis space is denoted by $\fH$. Hypothesis function is denoted by $f_{\vtheta}(\vx)\in\fH$ or $f(\vx;\vtheta)\in\fH$ with $f_{\vtheta}:\fX\to\fY$.
+A hypothesis space is denoted by $\fH$. A hypothesis function is denoted by $f_{\vtheta}(\vx)\in\fH$ or $f(\vx;\vtheta)\in\fH$ with $f_{\vtheta}:\fX\to\fY$.
 
 $\vtheta$  denotes the set of parameters of  $f_{\vtheta}$.  
 
 If there exists a target function, it is denoted by $f^*$or $f:\fX\to\fY$ satisfying $\vy_i=f^*(\vx_i)$ for $i=1,\ldots,n$.
 
 \section{Loss function}~\\
-Loss function, denoted by $\ell:\fH\times\fZ\to\sR_+:=[0,+\infty)$, measures the difference between a predicted label and a true label, e.g., $L^2$ loss: 
+A loss function, denoted by $\ell:\fH\times\fZ\to\sR_+:=[0,+\infty)$, measures the difference between a predicted label and a true label, e.g., $L^2$ loss: 
 \[
 \ell(f_{\vtheta},\vz)=\frac{1}{2}(f_{\vtheta}(\vx)-\vy)^2,
 \]
@@ -64,20 +64,20 @@ Loss function, denoted by $\ell:\fH\times\fZ\to\sR_+:=[0,+\infty)$, measures the
 \ell(f_{\vtheta}(\vx),\vy)
 \]
  for convenience.
-Empirical risk or training loss for a set $S=\{(\vx_i,\vy_i)\}_{i=1}^{n}$ is denoted by   $\LS(\vtheta)$ or $L_{n}(\vtheta)$ or $\fR_{n}(\vtheta)$ or $\fR_{S}(\vtheta)$,
+Empirical risk or training loss for a set $S=\{(\vx_i,\vy_i)\}_{i=1}^{n}$ is denoted by   $\LS(\vtheta)$ or $L_{n}(\vtheta)$ or $R_{n}(\vtheta)$ or $R_{S}(\vtheta)$,
 \begin{equation}
     \LS(\vtheta) =\frac{1}{n}\sum_{i=1}^n\ell(f_{\vtheta}(\vx_i),\vy_i).
 \end{equation}
-Without ambiguity, $L$ is also used for $L_S$.
 
-The population risk or expected loss is denoted by
+
+The population risk or expected loss is denoted by $L_{\fD}(\vtheta)$ or $R_{\fD}(\vtheta)$
 \begin{equation}
     \LD(\vtheta) =\Exp_{\fD}\ell(f_{\vtheta}(\vx),\vy),
 \end{equation}
 where $\vz=(\vx,\vy)$ follows the distribution $\fD$.
 
 \section{Activation function}
-Activation function is denoted by $\sigma(x)$. 
+An activation function is denoted by $\sigma(x)$. 
 \begin{exam}Some commonly used activation functions are~\\
     \begin{enumerate}
         \item $\sigma(x) = \ReLU (x) = \max (0, x)$;
@@ -98,7 +98,7 @@ where $\sigma$ is the activation function, $\vw_j$ is the input weight, $a_j$ is
 \vtheta=(a_1,\cdots,a_m,\vw_1,\cdots,\vw_m,b_1,\cdots,b_m).
 \] 
 \section{General deep neural network}~\\
-The counting of the layer number excludes the input layer. A $L$-layer neural network is denoted by
+The counting of the layer number excludes the input layer. An $L$-layer neural network is denoted by
 \begin{equation}
     f_{\vtheta}(\vx) = \vW^{[L-1]} \sigma\circ(\mW^{[L-2]}\sigma\circ(\cdots (\mW^{[1]} \sigma\circ(\mW^{[0]} \vx + \vb^{[0]} ) + \vb^{[1]} )\cdots)+\vb^{[L-2]})+\vb^{[L-1]},
 \end{equation}
