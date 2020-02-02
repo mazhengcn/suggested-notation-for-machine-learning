@@ -36,7 +36,7 @@ $n=\#S$ is the number of samples. Wihout specification, $S$ and $n$ are for the 
 
 ## Function
 
-Hypothesis space is denoted by $\mathcal{H}$. Hypothesis function is denoted by $f_{\mathbf{\theta}}(\mathbf{x})\in\mathcal{H}$ or $f(\mathbf{x};\mathbf{\theta})$ with $f_{\mathbf{\theta}}:\mathcal{X}\to\mathcal{Y}$.
+A hypothesis space is denoted by $\mathcal{H}$. A hypothesis function is denoted by $f_{\mathbf{\theta}}(\mathbf{x})\in\mathcal{H}$ or $f(\mathbf{x};\mathbf{\theta})$ with $f_{\mathbf{\theta}}:\mathcal{X}\to\mathcal{Y}$.
 
 $\mathbf{\theta}$ denotes the set of parameters of $f_{\mathbf{\theta}}$.
 
@@ -44,7 +44,7 @@ If there exists a target function, it is denoted by $f^*$ or $f^*:\mathcal{X}\to
 
 ## Loss function
 
-Loss function, denoted by $\ell:\mathcal{H}\times\mathcal{Z}\to\mathbb{R}_{+}:=[0,+\infty)$ measures the difference between a predicted label and a true label, e.g.,
+A loss function, denoted by $\ell:\mathcal{H}\times\mathcal{Z}\to\mathbb{R}_{+}:=[0,+\infty)$ measures the difference between a predicted label and a true label, e.g.,
 
 - $L^2$ loss: $\ell(f_{\mathbf{\theta}},\mathbf{z})=(f_{\mathbf{\theta}}(\mathbf{x})-\mathbf{y})^2$, where $\mathbf{z}=(\mathbf{x},\mathbf{y})$. $\ell(f_{\mathbf{\theta}},\mathbf{z})$ can also be written as $\ell(f_{\mathbf{\theta}},\mathbf{y}))$ for convenience.
 
@@ -66,7 +66,7 @@ where $\mathbf{z}=(\mathbf{x},\mathbf{y})$ follows the distribution $\mathcal{D}
 
 ## Activation function
 
-Activation function is denoted by $\sigma(x)$.
+An activation function is denoted by $\sigma(x)$.
 
 **Example 1**. Some commonly used activation functions are
 
@@ -91,7 +91,7 @@ $$
 
 ## General deep neural network
 
-The counting of the layer number excludes the input layer. A $L$-layer neural network is denoted by
+The counting of the layer number excludes the input layer. An $L$-layer neural network is denoted by
 $$
   f_{\mathbf{\theta}}(\mathbf{x})=\mathbf{W}^{[L-1]}\sigma\circ(\mathbf{W}^{[L-2]})\sigma\circ(\cdots(\mathbf{W}^{[1]}\sigma\circ(\mathbf{W}^{[0]}\mathbf{x}+\mathbf{b}^{[0]})+\mathbf{b}^{[1]})\cdots)+\mathbf{b}^{[L-2]})+\mathbf{b}^{[L-1]},
 $$
