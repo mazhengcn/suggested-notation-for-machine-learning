@@ -2,7 +2,6 @@
 
 ## Authors
 
-- **Beijing Academy of Artificial Intelligence**
 - **Beijing Academy of Artificial Intelligence (北京智源人工智能研究院)**
 - **Peking University (北京大学)**
 - **Shanghai Jiao Tong University (上海交通大学)**
