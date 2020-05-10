@@ -23,8 +23,6 @@ The field of machine learning is evolving rapidly in recent years. Communication
 - [Acknowledgements](#acknowledgements)
 
 ## Dataset
-t
-est
 
 Dataset $S=\{\mathbf{z}_i\}^n_{i=1}=\{(\mathbf{x}_i,\mathbf{y}_i)\}^n_{i=1}$ is sampled from a distribution $\mathcal{D}$ over a domain $\mathcal{Z}=\mathcal{X}\times\mathcal{Y}$.
 
@@ -55,7 +53,6 @@ Empirical risk or training loss for a set $S=\{(\mathbf{x_i},\mathbf{y_i})\}^n_{
 $$
   L_S(\mathbf{\theta})=\frac{1}{n}\sum^n_{i=1}\ell(f_{\mathbf{\theta}}(\mathbf{x}_i),\mathbf{y}_i).
 $$
- 
 
 The population risk or expected loss is denoted by $L_{\mathcal{D}}$ or $R_{\mathcal{D}}$,
 
@@ -93,6 +90,7 @@ $$
 ## General deep neural network
 
 The counting of the layer number excludes the input layer. An $L$-layer neural network is denoted by
+
 $$
   f_{\mathbf{\theta}}(\mathbf{x})=\mathbf{W}^{[L-1]}\sigma\circ(\mathbf{W}^{[L-2]})\sigma\circ(\cdots(\mathbf{W}^{[1]}\sigma\circ(\mathbf{W}^{[0]}\mathbf{x}+\mathbf{b}^{[0]})+\mathbf{b}^{[1]})\cdots)+\mathbf{b}^{[L-2]})+\mathbf{b}^{[L-1]},
 $$
@@ -108,9 +106,11 @@ This can also be defined recursively,
 $$
   f^{[0]}_{\mathbf{\theta}}(\mathbf{x})=\mathbf{x},
 $$
+
 $$
   f^{[l]}_{\mathbf{\theta}}(\mathbf{x})=\sigma\circ(\mathbf{W}^{[l-1]}f^{[l-1]}_{\mathbf{\theta}}(\mathbf{x})+\mathbf{b}^{[l-1]}), \quad 1\le l\le L-1,
 $$
+
 $$
   f_{\mathbf{\theta}}(\mathbf{x})=f^{[L]}_{\mathbf{\theta}}(\mathbf{x})=\mathbf{W}^{[L-1]}f^{[L-1]}_{\mathbf{\theta}}(\mathbf{x})+\mathbf{b}^{[L-1]}, \quad 1\le l\le L-1.
 $$
@@ -182,20 +182,20 @@ The convolution operation is denoted by $*$.
 
 ## L-layer neural network
 
-| symbol                                  | meaning                                                                                                                                 | Latex          | simplied           |
-| --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ |
-| $d$                                     | input dimension                                                                                                                         | `d`            |                    |
-| $d_{\text{o}}$                          | output dimension                                                                                                                        | `d_{\rm o}`    |                    |
-| $m_l$                                   | the number of $l$-th layer neuron, $m_0=d$, $m_{L} = d_{\text{o}}$                                                                      | `m_l`          |
-| $\mathbf{W}^{[l]}$                      | the $l$-th layer weight                                                                                                                 | `\bm{W}^{[l]}` | `\mathbf{W}^{[l]}` |
-| $\mathbf{b}^{[l]}$                      | the $l$-th layer bias term                                                                                                              | `\bm{b}^{[l]}` | `\mathbf{b}^{[l]}` |
-| $\circ$                                 | entry-wise operation                                                                                                                    | `\circ`        |
-| $\sigma:\mathbb{R}\to\mathbb{R}^+$      | activation function                                                                                                                     | `\sigma`       |
-| $\mathbf{\theta}$                       | $=(\mathbf{W}^{[0]},\ldots,\mathbf{W}^{[L-1]},\mathbf{b}^{[0]},\ldots,\mathbf{b}^{[L-1]})$,  parameters                                 | `\bm{\theta}`  | `\mathbf{\theta}`  |
-| $f_{\mathbf{\theta}}^{[0]}(\mathbf{x})$ | $=\mathbf{x}$                                                                                                                           |
-| $f_{\mathbf{\theta}}^{[l]}(\mathbf{x})$ | $=\sigma\circ(\mathbf{W}^{[l-1]} f_{\mathbf{\theta}}^{[l-1]}(\mathbf{x}) + \mathbf{b}^{[l-1]})$,  $l$-th  layer output                  |
-| $f_{\mathbf{\theta}}(\mathbf{x})$       | $=f_{\mathbf{\theta}}^{[L]}(\mathbf{x})=\mathbf{W}^{[L-1]} f_{\mathbf{\theta}}^{[L-1]}(\mathbf{x}) + \mathbf{b}^{[L-1]}$,  $L$-layer NN |
+| symbol                                  | meaning                                                                                                                                | Latex          | simplied           |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ |
+| $d$                                     | input dimension                                                                                                                        | `d`            |                    |
+| $d_{\text{o}}$                          | output dimension                                                                                                                       | `d_{\rm o}`    |                    |
+| $m_l$                                   | the number of $l$-th layer neuron, $m_0=d$, $m_{L} = d_{\text{o}}$                                                                     | `m_l`          |
+| $\mathbf{W}^{[l]}$                      | the $l$-th layer weight                                                                                                                | `\bm{W}^{[l]}` | `\mathbf{W}^{[l]}` |
+| $\mathbf{b}^{[l]}$                      | the $l$-th layer bias term                                                                                                             | `\bm{b}^{[l]}` | `\mathbf{b}^{[l]}` |
+| $\circ$                                 | entry-wise operation                                                                                                                   | `\circ`        |
+| $\sigma:\mathbb{R}\to\mathbb{R}^+$      | activation function                                                                                                                    | `\sigma`       |
+| $\mathbf{\theta}$                       | $=(\mathbf{W}^{[0]},\ldots,\mathbf{W}^{[L-1]},\mathbf{b}^{[0]},\ldots,\mathbf{b}^{[L-1]})$, parameters                                 | `\bm{\theta}`  | `\mathbf{\theta}`  |
+| $f_{\mathbf{\theta}}^{[0]}(\mathbf{x})$ | $=\mathbf{x}$                                                                                                                          |
+| $f_{\mathbf{\theta}}^{[l]}(\mathbf{x})$ | $=\sigma\circ(\mathbf{W}^{[l-1]} f_{\mathbf{\theta}}^{[l-1]}(\mathbf{x}) + \mathbf{b}^{[l-1]})$, $l$-th layer output                   |
+| $f_{\mathbf{\theta}}(\mathbf{x})$       | $=f_{\mathbf{\theta}}^{[L]}(\mathbf{x})=\mathbf{W}^{[L-1]} f_{\mathbf{\theta}}^{[L-1]}(\mathbf{x}) + \mathbf{b}^{[L-1]}$, $L$-layer NN |
 
 # Acknowledgements
 
-Chenglong Bao (Tsinghua), Zhengdao Chen (NYU), Bin Dong (Peking), Weinan E (Princeton),  Quanquan Gu (UCLA), Kaizhu Huang (XJTLU), Shi Jin (SJTU), Jian Li (Tsinghua), Lei Li (SJTU), Tiejun Li (Peking),   Zhenguo Li (Huawei), Zhemin Li (NUDT), Shaobo Lin (XJTU), Ziqi Liu (CSRC),  Zichao Long (Peking), Chao Ma (Princeton),  Chao Ma (SJTU), Yuheng Ma (WHU),    Dengyu Meng (XJTU), Wang Miao (Peking),  Pingbing Ming (CAS), Zuoqiang Shi (Tsinghua), Jihong Wang (CSRC), Liwei Wang (Peking), Bican Xia (Peking), Zhouwang Yang (USTC),  Haijun Yu (CAS),  Yang Yuan  (Tsinghua),  Cheng Zhang (Peking),  Lulu Zhang (SJTU), Jiwei Zhang  (WHU),   Pingwen Zhang (Peking), Xiaoqun Zhang (SJTU),  Chengchao Zhao (CSRC), Zhanxing Zhu (Peking), Chuan Zhou (CAS),  Xiang Zhou (cityU). 
+Chenglong Bao (Tsinghua), Zhengdao Chen (NYU), Bin Dong (Peking), Weinan E (Princeton), Quanquan Gu (UCLA), Kaizhu Huang (XJTLU), Shi Jin (SJTU), Jian Li (Tsinghua), Lei Li (SJTU), Tiejun Li (Peking), Zhenguo Li (Huawei), Zhemin Li (NUDT), Shaobo Lin (XJTU), Ziqi Liu (CSRC), Zichao Long (Peking), Chao Ma (Princeton), Chao Ma (SJTU), Yuheng Ma (WHU), Dengyu Meng (XJTU), Wang Miao (Peking), Pingbing Ming (CAS), Zuoqiang Shi (Tsinghua), Jihong Wang (CSRC), Liwei Wang (Peking), Bican Xia (Peking), Zhouwang Yang (USTC), Haijun Yu (CAS), Yang Yuan (Tsinghua), Cheng Zhang (Peking), Lulu Zhang (SJTU), Jiwei Zhang (WHU), Pingwen Zhang (Peking), Xiaoqun Zhang (SJTU), Chengchao Zhao (CSRC), Zhanxing Zhu (Peking), Chuan Zhou (CAS), Xiang Zhou (cityU).
