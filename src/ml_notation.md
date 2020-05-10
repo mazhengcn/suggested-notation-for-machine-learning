@@ -23,6 +23,8 @@ The field of machine learning is evolving rapidly in recent years. Communication
 - [Acknowledgements](#acknowledgements)
 
 ## Dataset
+t
+est
 
 Dataset $S=\{\mathbf{z}_i\}^n_{i=1}=\{(\mathbf{x}_i,\mathbf{y}_i)\}^n_{i=1}$ is sampled from a distribution $\mathcal{D}$ over a domain $\mathcal{Z}=\mathcal{X}\times\mathcal{Y}$.
 
@@ -141,58 +143,58 @@ The convolution operation is denoted by $*$.
 
 ## Notation table
 
-| symbol | meaning | Latex | simplied |
-| --------- | --------- | --------- | --------- |
-| $\mathbf{x}$ | input | `\bm{x}` | `\mathbf{x}` |
-| $\mathbf{y}$ | output, label | `\bm{y}` | `\vy` |
-| $d$ | input dimension | `d` |  |
-| $d_{\text{o}}$ | output dimension | `d_{\rm o}` |  |
-| $n$ | number of samples | `n`  |
-| $\mathcal{X}$ | instances domain (a set)|`\mathcal{X}` | `\fX` |
-| $\mathcal{Y}$ | labels domain (a set)| `\mathcal{Y}` | `\fY` |
-| $\mathcal{Z}$ | $=\mathcal{X}\times\mathcal{Y}$ example domain|`\mathcal{Z}` | `\fZ` |
-| $\mathcal{H}$| hypothesis space (a set)| `\mathcal{H}` | `\mathcal{H}` |
-| $\mathbf{\theta}$ | a set of parameters | `\bm{\theta}` | `\mathbf{\theta}` |
-| $f_{\mathbf{\theta}}: \mathcal{X}\to\mathcal{Y}$ | hypothesis function | `\f_{\bm{\theta}}` | `f_{\mathbf{\theta}}` |
-| $f$ or $f^*: \mathcal{X}\to\mathcal{Y}$ | target function  | `f, f^*` |
-| $\ell:\mathcal{H}\times \mathcal{Z}\to \mathbb{R}^+$ | loss function | `\ell` |
-| $\mathcal{D}$ | distribution of $\mathcal{Z}$ | `\mathcal{D}` | `\fD` |
-| $S=\{\mathbf{z}_i\}_{i=1}^n$ | $=\{(\mathbf{x}_i,\mathbf{y}_i)\}_{i=1}^n$ sample set |
-$L_S(\mathbf{\theta})$, $L_{n}(\mathbf{\theta})$, $R_n(\mathbf{\theta})$, $R_S(\mathbf{\theta})$ | empirical risk or training loss |
-| $L_D(\mathbf{\theta})$ | population risk or expected loss |
-| $\sigma:\mathbb{R}\to\mathbb{R}^+$| activation function | `\sigma` |
-| $\mathbf{w}_j$ | input weight | `\bm{w}_j` | `\mathbf{w}_j` |
-| $a_j$ | output weight | `a_j` |
-| $b_j$ | bias term | `b_j` |
-| $f_{\mathbf{\theta}}(\mathbf{x})$ or $f(\mathbf{x};\mathbf{\theta})$ | neural network |`f_{\bm{\theta}}`|`f_{\mathbf{\theta}}`|
-| $\sum_{j=1}^{m} a_j \sigma (\mathbf{w}_j\cdot \mathbf{x} + b_j)$| two-layer neural network |
-| $\text{VCdim}(\mathcal{H}$) | VC-dimension of $\mathcal{H}$ |
-| $\text{Rad}(\mathcal{H}\circ S)$, $\text{Rad}_{S}(\mathcal{H})$| Rademacher complexity of $\mathcal{H}$ on $S$|
-| ${\rm Rad}_{n} (\mathcal{H})$| Rademacher complexity over samples of size $n$ |
-| $\text{GD}$ | gradient descent |
-| $\text{SGD}$ | stochastic gradient descent |
-| $B$ | a batch set | `B` | |
-| $\vert B\vert$ | batch size | `b` | |
-| $\eta$ | learning rate |`\eta`|
-| $\mathbf{k}$ | discretized frequency | `\bm{k}` | `\mathbf{k}` |
-| $\mathbf{\xi}$ | continuous frequency | `\bm{\xi}` | `\mathbf{xi}` | |
-| $*$ | convolution operation | `*` |
+| symbol                                                                                           | meaning                                               | Latex              | simplied              |
+| ------------------------------------------------------------------------------------------------ | ----------------------------------------------------- | ------------------ | --------------------- |
+| $\mathbf{x}$                                                                                     | input                                                 | `\bm{x}`           | `\mathbf{x}`          |
+| $\mathbf{y}$                                                                                     | output, label                                         | `\bm{y}`           | `\vy`                 |
+| $d$                                                                                              | input dimension                                       | `d`                |                       |
+| $d_{\text{o}}$                                                                                   | output dimension                                      | `d_{\rm o}`        |                       |
+| $n$                                                                                              | number of samples                                     | `n`                |
+| $\mathcal{X}$                                                                                    | instances domain (a set)                              | `\mathcal{X}`      | `\fX`                 |
+| $\mathcal{Y}$                                                                                    | labels domain (a set)                                 | `\mathcal{Y}`      | `\fY`                 |
+| $\mathcal{Z}$                                                                                    | $=\mathcal{X}\times\mathcal{Y}$ example domain        | `\mathcal{Z}`      | `\fZ`                 |
+| $\mathcal{H}$                                                                                    | hypothesis space (a set)                              | `\mathcal{H}`      | `\mathcal{H}`         |
+| $\mathbf{\theta}$                                                                                | a set of parameters                                   | `\bm{\theta}`      | `\mathbf{\theta}`     |
+| $f_{\mathbf{\theta}}: \mathcal{X}\to\mathcal{Y}$                                                 | hypothesis function                                   | `\f_{\bm{\theta}}` | `f_{\mathbf{\theta}}` |
+| $f$ or $f^*: \mathcal{X}\to\mathcal{Y}$                                                          | target function                                       | `f, f^*`           |
+| $\ell:\mathcal{H}\times \mathcal{Z}\to \mathbb{R}^+$                                             | loss function                                         | `\ell`             |
+| $\mathcal{D}$                                                                                    | distribution of $\mathcal{Z}$                         | `\mathcal{D}`      | `\fD`                 |
+| $S=\{\mathbf{z}_i\}_{i=1}^n$                                                                     | $=\{(\mathbf{x}_i,\mathbf{y}_i)\}_{i=1}^n$ sample set |
+| $L_S(\mathbf{\theta})$, $L_{n}(\mathbf{\theta})$, $R_n(\mathbf{\theta})$, $R_S(\mathbf{\theta})$ | empirical risk or training loss                       |
+| $L_D(\mathbf{\theta})$                                                                           | population risk or expected loss                      |
+| $\sigma:\mathbb{R}\to\mathbb{R}^+$                                                               | activation function                                   | `\sigma`           |
+| $\mathbf{w}_j$                                                                                   | input weight                                          | `\bm{w}_j`         | `\mathbf{w}_j`        |
+| $a_j$                                                                                            | output weight                                         | `a_j`              |
+| $b_j$                                                                                            | bias term                                             | `b_j`              |
+| $f_{\mathbf{\theta}}(\mathbf{x})$ or $f(\mathbf{x};\mathbf{\theta})$                             | neural network                                        | `f_{\bm{\theta}}`  | `f_{\mathbf{\theta}}` |
+| $\sum_{j=1}^{m} a_j \sigma (\mathbf{w}_j\cdot \mathbf{x} + b_j)$                                 | two-layer neural network                              |
+| $\text{VCdim}(\mathcal{H}$)                                                                      | VC-dimension of $\mathcal{H}$                         |
+| $\text{Rad}(\mathcal{H}\circ S)$, $\text{Rad}_{S}(\mathcal{H})$                                  | Rademacher complexity of $\mathcal{H}$ on $S$         |
+| ${\rm Rad}_{n} (\mathcal{H})$                                                                    | Rademacher complexity over samples of size $n$        |
+| $\text{GD}$                                                                                      | gradient descent                                      |
+| $\text{SGD}$                                                                                     | stochastic gradient descent                           |
+| $B$                                                                                              | a batch set                                           | `B`                |                       |
+| $\vert B\vert$                                                                                   | batch size                                            | `b`                |                       |
+| $\eta$                                                                                           | learning rate                                         | `\eta`             |
+| $\mathbf{k}$                                                                                     | discretized frequency                                 | `\bm{k}`           | `\mathbf{k}`          |
+| $\mathbf{\xi}$                                                                                   | continuous frequency                                  | `\bm{\xi}`         | `\mathbf{xi}`         |  |
+| $*$                                                                                              | convolution operation                                 | `*`                |
 
 ## L-layer neural network
 
-| symbol | meaning | Latex | simplied |
-| --------- | --------- | --------- | --------- |
-| $d$ | input dimension | `d` |  |
-| $d_{\text{o}}$ | output dimension |`d_{\rm o}` |  |
-| $m_l$ | the number of $l$-th layer neuron, $m_0=d$, $m_{L} = d_{\text{o}}$ | `m_l` |
-| $\mathbf{W}^{[l]}$ | the $l$-th layer weight | `\bm{W}^{[l]}` | `\mathbf{W}^{[l]}` |
-| $\mathbf{b}^{[l]}$ | the $l$-th layer bias term |`\bm{b}^{[l]}`| `\mathbf{b}^{[l]}` |
-| $\circ$ | entry-wise operation | `\circ` |
-| $\sigma:\mathbb{R}\to\mathbb{R}^+$ | activation function |`\sigma`|
-| $\mathbf{\theta}$ | $=(\mathbf{W}^{[0]},\ldots,\mathbf{W}^{[L-1]},\mathbf{b}^{[0]},\ldots,\mathbf{b}^{[L-1]})$,  parameters|`\bm{\theta}`|`\mathbf{\theta}`|
-| $f_{\mathbf{\theta}}^{[0]}(\mathbf{x})$|$=\mathbf{x}$|
-| $f_{\mathbf{\theta}}^{[l]}(\mathbf{x})$|$=\sigma\circ(\mathbf{W}^{[l-1]} f_{\mathbf{\theta}}^{[l-1]}(\mathbf{x}) + \mathbf{b}^{[l-1]})$,  $l$-th  layer output |
-| $f_{\mathbf{\theta}}(\mathbf{x})$|$=f_{\mathbf{\theta}}^{[L]}(\mathbf{x})=\mathbf{W}^{[L-1]} f_{\mathbf{\theta}}^{[L-1]}(\mathbf{x}) + \mathbf{b}^{[L-1]}$,  $L$-layer NN|
+| symbol                                  | meaning                                                                                                                                 | Latex          | simplied           |
+| --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ |
+| $d$                                     | input dimension                                                                                                                         | `d`            |                    |
+| $d_{\text{o}}$                          | output dimension                                                                                                                        | `d_{\rm o}`    |                    |
+| $m_l$                                   | the number of $l$-th layer neuron, $m_0=d$, $m_{L} = d_{\text{o}}$                                                                      | `m_l`          |
+| $\mathbf{W}^{[l]}$                      | the $l$-th layer weight                                                                                                                 | `\bm{W}^{[l]}` | `\mathbf{W}^{[l]}` |
+| $\mathbf{b}^{[l]}$                      | the $l$-th layer bias term                                                                                                              | `\bm{b}^{[l]}` | `\mathbf{b}^{[l]}` |
+| $\circ$                                 | entry-wise operation                                                                                                                    | `\circ`        |
+| $\sigma:\mathbb{R}\to\mathbb{R}^+$      | activation function                                                                                                                     | `\sigma`       |
+| $\mathbf{\theta}$                       | $=(\mathbf{W}^{[0]},\ldots,\mathbf{W}^{[L-1]},\mathbf{b}^{[0]},\ldots,\mathbf{b}^{[L-1]})$,  parameters                                 | `\bm{\theta}`  | `\mathbf{\theta}`  |
+| $f_{\mathbf{\theta}}^{[0]}(\mathbf{x})$ | $=\mathbf{x}$                                                                                                                           |
+| $f_{\mathbf{\theta}}^{[l]}(\mathbf{x})$ | $=\sigma\circ(\mathbf{W}^{[l-1]} f_{\mathbf{\theta}}^{[l-1]}(\mathbf{x}) + \mathbf{b}^{[l-1]})$,  $l$-th  layer output                  |
+| $f_{\mathbf{\theta}}(\mathbf{x})$       | $=f_{\mathbf{\theta}}^{[L]}(\mathbf{x})=\mathbf{W}^{[L-1]} f_{\mathbf{\theta}}^{[L-1]}(\mathbf{x}) + \mathbf{b}^{[L-1]}$,  $L$-layer NN |
 
 # Acknowledgements
 
