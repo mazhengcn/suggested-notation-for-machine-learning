@@ -30,20 +30,20 @@
 \title{Suggested Notation for Machine Learning \thanks{This document is published by Beijing Academy of Artificial Intelligence (北京智源人工智能研究院) jointly with Peking University (北京大学) and Shanghai Jiao Tong University (上海交通大学).}}
 \author{Zhi-Qin John Xu\thanks{Corresponding: xuzhiqin@sjtu.edu.cn, Shanghai Jiao Tong University.}, Tao Luo\thanks{Purdue University}, Zheng Ma\thanks{Purdue University}, Yaoyu Zhang\thanks{Institute for Advanced Study}}
 
-\maketitle 
+\maketitle
 %\date{\today}
 \begin{abstract}
-The field of machine learning is evolving rapidly in recent years. Communication between different researchers and research groups becomes increasingly important. A key challenge for communication arises from inconsistent notation usages among different papers. This proposal suggests a standard for commonly used mathematical notation for machine learning. In this first version, only some notation are mentioned and more notation are left to be done. This proposal will be regularly updated based on the progress of the field. We look forward to more suggestions to improve this proposal in future versions.
+    The field of machine learning is evolving rapidly in recent years. Communication between different researchers and research groups becomes increasingly important. A key challenge for communication arises from inconsistent notation usages among different papers. This proposal suggests a standard for commonly used mathematical notation for machine learning. In this first version, only some notation are mentioned and more notation are left to be done. This proposal will be regularly updated based on the progress of the field. We look forward to more suggestions to improve this proposal in future versions.
 \end{abstract}
 
 \tableofcontents
 
 \section{Dataset}~\\
-Dataset  $S=\{\vz_i\}_{i=1}^n=\{(\vx_i,\vy_i)\}_{i=1}^n$ is sampled from a distribution $\fD$ over a domain $\fZ=\fX\times\fY$. 
+Dataset  $S=\{\vz_i\}_{i=1}^n=\{(\vx_i,\vy_i)\}_{i=1}^n$ is sampled from a distribution $\fD$ over a domain $\fZ=\fX\times\fY$.
 
-$\fX$  is the instance domain (a set), $\fY$ is the label domain (a set), and $\fZ=\fX\times\fY$ is the example domain (a set). 
+$\fX$  is the instance domain (a set), $\fY$ is the label domain (a set), and $\fZ=\fX\times\fY$ is the example domain (a set).
 
-Usually, 
+Usually,
 $\fX$ is a subset of $\sR^d$ and $\fY$ is a subset of $\sR^{d_{o}}$, where $d$ is the input dimension, $d_{o}$ is the output dimension.
 
 $n=\#S$ is the number of samples. Without specification, $S$ and $n$ are for the training set.
@@ -51,20 +51,20 @@ $n=\#S$ is the number of samples. Without specification, $S$ and $n$ are for the
 \section{Function}~\\
 A hypothesis space is denoted by $\fH$. A hypothesis function is denoted by $f_{\vtheta}(\vx)\in\fH$ or $f(\vx;\vtheta)\in\fH$ with $f_{\vtheta}:\fX\to\fY$.
 
-$\vtheta$  denotes the set of parameters of  $f_{\vtheta}$.  
+$\vtheta$  denotes the set of parameters of  $f_{\vtheta}$.
 
 If there exists a target function, it is denoted by $f^*$or $f:\fX\to\fY$ satisfying $\vy_i=f^*(\vx_i)$ for $i=1,\ldots,n$.
 
 \section{Loss function}~\\
-A loss function, denoted by $\ell:\fH\times\fZ\to\sR_+:=[0,+\infty)$, measures the difference between a predicted label and a true label, e.g., $L^2$ loss: 
+A loss function, denoted by $\ell:\fH\times\fZ\to\sR_+:=[0,+\infty)$, measures the difference between a predicted label and a true label, e.g., $L^2$ loss:
 \[
-\ell(f_{\vtheta},\vz)=\frac{1}{2}(f_{\vtheta}(\vx)-\vy)^2,
+    \ell(f_{\vtheta},\vz)=\frac{1}{2}(f_{\vtheta}(\vx)-\vy)^2,
 \]
- where $\vz=(\vx,\vy)$. $\ell(f_{\vtheta},\vz)$ can also be written as 
+where $\vz=(\vx,\vy)$. $\ell(f_{\vtheta},\vz)$ can also be written as
 \[
-\ell(f_{\vtheta}(\vx),\vy)
+    \ell(f_{\vtheta}(\vx),\vy)
 \]
- for convenience.
+for convenience.
 Empirical risk or training loss for a set $S=\{(\vx_i,\vy_i)\}_{i=1}^{n}$ is denoted by   $\LS(\vtheta)$ or $L_{n}(\vtheta)$ or $R_{n}(\vtheta)$ or $R_{S}(\vtheta)$,
 \begin{equation}
     \LS(\vtheta) =\frac{1}{n}\sum_{i=1}^n\ell(f_{\vtheta}(\vx_i),\vy_i).
@@ -78,8 +78,9 @@ The population risk or expected loss is denoted by $L_{\fD}(\vtheta)$ or $R_{\fD
 where $\vz=(\vx,\vy)$ follows the distribution $\fD$.
 
 \section{Activation function}
-An activation function is denoted by $\sigma(x)$. 
-\begin{exam}Some commonly used activation functions are~\\
+An activation function is denoted by $\sigma(x)$.
+\begin{exam}
+    Some commonly used activation functions are
     \begin{enumerate}
         \item $\sigma(x) = \ReLU (x) = \max (0, x)$;
         \item $\sigma(x) ={\rm sigmoid}(x)= \frac{1}{1 + \E^{-x}}$;
@@ -90,41 +91,41 @@ An activation function is denoted by $\sigma(x)$.
 
 
 \section{Two-layer neural network}~\\
-The neuron number of the hidden layer is denoted by $m$. The two-layer neural network is 
+The neuron number of the hidden layer is denoted by $m$. The two-layer neural network is
 \begin{equation}
     f_{\vtheta}(\vx)=\sum_{j=1}^{m} a_j \sigma (\vw_j\cdot \vx + b_j),
 \end{equation}
-where $\sigma$ is the activation function, $\vw_j$ is the input weight, $a_j$ is the output weight, $b_j$ is the bias term. We denote the set of parameters by 
+where $\sigma$ is the activation function, $\vw_j$ is the input weight, $a_j$ is the output weight, $b_j$ is the bias term. We denote the set of parameters by
 \[
-\vtheta=(a_1,\cdots,a_m,\vw_1,\cdots,\vw_m,b_1,\cdots,b_m).
-\] 
+    \vtheta=(a_1,\ldots,a_m,\vw_1,\ldots,\vw_m,b_1,\ldots,b_m).
+\]
 \section{General deep neural network}~\\
 The counting of the layer number excludes the input layer. An $L$-layer neural network is denoted by
 \begin{equation}
     f_{\vtheta}(\vx) = \vW^{[L-1]} \sigma\circ(\mW^{[L-2]}\sigma\circ(\cdots (\mW^{[1]} \sigma\circ(\mW^{[0]} \vx + \vb^{[0]} ) + \vb^{[1]} )\cdots)+\vb^{[L-2]})+\vb^{[L-1]},
 \end{equation}
 where $\mW^{[l]} \in \sR^{m_{l+1}\times m_{l}}$, $\vb^{[l]}=\sR^{m_{l+1}}$, $m_0=d_{\rm in}=d$, $m_{L}=d_{\rm o}$,
-$\sigma$ is a scalar function and ``$\circ$'' means entry-wise operation. 
+$\sigma$ is a scalar function and ``$\circ$'' means entry-wise operation.
 We denote the set of parameters by \[
-\vtheta=(\mW^{[0]},\mW^{[1]},\ldots,\vW^{[L-1]},\vb^{[0]},\vb^{[1]},\ldots,\vb^{[L-1]}),
-\] 
+    \vtheta=(\mW^{[0]},\mW^{[1]},\ldots,\vW^{[L-1]},\vb^{[0]},\vb^{[1]},\ldots,\vb^{[L-1]}),
+\]
 and  an entry of $\vW^{[l]}$ by   $\vW^{[l]}_{ij}$. This can also be defined recursively.
 \begin{align}
-    &f_{\vtheta}^{[0]}(\vx)=\vx, \\
-    &f_{\vtheta}^{[l]}(\vx)=\sigma\circ(\mW^{[l-1]} f_{\vtheta}^{[l-1]}(\vx) + \vb^{[l-1]}) \quad 1\leq l\leq L-1,\\
-    &f_{\vtheta}(\vx)=f_{\vtheta}^{[L]}(\vx)=\mW^{[L-1]} f_{\vtheta}^{[L-1]}(\vx) + \vb^{[L-1]}.
+     & f_{\vtheta}^{[0]}(\vx)=\vx,                                                                                   \\
+     & f_{\vtheta}^{[l]}(\vx)=\sigma\circ(\mW^{[l-1]} f_{\vtheta}^{[l-1]}(\vx) + \vb^{[l-1]}) \quad 1\leq l\leq L-1, \\
+     & f_{\vtheta}(\vx)=f_{\vtheta}^{[L]}(\vx)=\mW^{[L-1]} f_{\vtheta}^{[L-1]}(\vx) + \vb^{[L-1]}.
 \end{align}
 
 \section{Complexity}~\\
 The VC-dimension of a hypothesis class $\fH$ is denoted ${\rm VCdim}(\fH)$.
 
-The Rademacher complexity of a hypothesis space $\fH$ on a sample set $S$ is denoted by ${\rm Rad} (\fH\circ S)$ or ${\rm Rad}_{S} (\fH)$. The complexity ${\rm Rad}_{S} (\fH)$ is random because of the randomness of $S$. The expectation of the empirical Rademacher complexity over all samples of size $n$ is denoted by 
+The Rademacher complexity of a hypothesis space $\fH$ on a sample set $S$ is denoted by ${\rm Rad} (\fH\circ S)$ or ${\rm Rad}_{S} (\fH)$. The complexity ${\rm Rad}_{S} (\fH)$ is random because of the randomness of $S$. The expectation of the empirical Rademacher complexity over all samples of size $n$ is denoted by
 \[
-{\rm Rad}_{n} (\fH)=\Exp_{S} {\rm Rad}_{S} (\fH).
+    {\rm Rad}_{n} (\fH)=\Exp_{S} {\rm Rad}_{S} (\fH).
 \]
 
 \section{Training}~\\
-The Gradient Descent is often denoted by GD. The Stochastic Gradient Descent is often denoted by SGD. 
+The Gradient Descent is often denoted by GD. The Stochastic Gradient Descent is often denoted by SGD.
 
 A batch set is denoted by $B$ and the batch size is denoted by $|B|$.
 
@@ -140,50 +141,50 @@ The discretized frequency is denoted by $\vk$, and the continuous frequency is d
 The convolution operation is denoted by $*$.
 
 \newpage
-\section{Notation table}~\\
+\section{Notation table}
 \begin{center}
     \begin{tabular}{llll}
         \toprule
-        symbol & meaning & \LaTeX & simplied\\
+        symbol                                              & meaning                                 & \LaTeX                  & simplied                \\
         \midrule
 
-        $\vx$ & input & \verb!\bm{x}! & \verb!\vx! \\
-        $\vy$ & output, label & \verb!\bm{y}! & \verb!\vy! \\
-        $d$ & input dimension & \verb!d! &  \\
-        $d_{\rm o}$ & output dimension &\verb!d_{\rm o}! &  \\
-        $n$ & number of samples & \verb!n!  \\
+        $\vx$                                               & input                                   & \verb!\bm{x}!  & \verb!\vx!  \\
+        $\vy$                                               & output, label                           & \verb!\bm{y}!  & \verb!\vy!  \\
+        $d$                                                 & input dimension                         & \verb!d!  &                         \\
+        $d_{\rm o}$                                         & output dimension                        & \verb!d_{\rm o}!  &                         \\
+        $n$                                                 & number of samples                       & \verb!n!                            \\
         $\fX$
-        & instances domain (a set)&\verb!\mathcal{X}!&\verb!\fX!\\
+                                                            & instances domain (a set)                & \verb!\mathcal{X}!  & \verb!\fX!  \\
         $\fY$
-        & labels domain (a set)&\verb!\mathcal{Y}!&\verb!\fY!\\
-        $\fZ$& $=\fX\times\fY$ example domain&\verb!\mathcal{Z}!&\verb!\fZ!\\
-        $\fH$& hypothesis space (a set)&\verb!\mathcal{H}!&\verb!\fH!\\
-        $\vtheta$ & a set of parameters & \verb!\bm{\theta}! &\verb!\vtheta!\\
-        $f_{\vtheta}:\fX\to \fY$ & hypothesis function & \verb!\f_{\bm{\theta}}! & \verb!f_{\vtheta}! \\
-        $f$ or $f^*:\fX\to\fY$ & target function  & \verb!f,f^*!   \\
-        $\ell:\fH\times \fZ\to \sR^+$ & loss function & \verb!\ell! \\
-        $\fD$&distribution of  $\fZ$ &\verb!\mathcal{D}!&\verb!\fD!\\
-        $S=\{\vz_i\}_{i=1}^n$& $=\{(\vx_i,\vy_i)\}_{i=1}^n$ sample set\\
-         \begin{tabular}{@{}l @{}}$\LS(\vtheta)$, $L_{n}(\vtheta)$,\\$R_{n}(\vtheta)$, $R_{S}(\vtheta)$\end{tabular} & empirical risk or training loss\\
-        $\LD(\vtheta)$& population risk or expected loss\\
-        $\sigma:\sR\to\sR^+$& activation function &\verb!\sigma!\\
-        $\vw_j$ &input weight&\verb!\bm{w}_j!&\verb!\vw_j!\\
-        $a_j$ &output weight &\verb!a_j!\\
-        $b_j$ &bias term &\verb!b_j!\\
-        $f_{\vtheta}(\vx)$ or $f(\vx;\vtheta)$& neural network &\verb!f_{\bm{\theta}}!&\verb!f_{\vtheta}!\\
-        $\sum_{j=1}^{m} a_j \sigma (\vw_j\cdot \vx + b_j) $& two-layer neural network \\
-        ${\rm VCdim}(\fH)$& VC-dimension of  $\fH$ \\
-        ${\rm Rad} (\fH\circ S)$, ${\rm Rad}_{S} (\fH)$& Rademacher complexity of $\fH$ on $S$\\
-        ${\rm Rad}_{n} (\fH)$& \begin{tabular}{@{}l @{}}Rademacher complexity\\over samples of size $n$\end{tabular}\\
-        GD& gradient descent\\
-        SGD &stochastic gradient descent\\
-        $B$&a batch set&\verb!B!\\
-        $|B|$&batch size&\verb!b!\\
-        $\eta$&learning rate&\verb!\eta!\\
+                                                            & labels domain (a set)                   & \verb!\mathcal{Y}! & \verb!\fY! \\
+        $\fZ$                                               & $=\fX\times\fY$ example domain          & \verb!\mathcal{Z}! & \verb!\fZ! \\
+        $\fH$                                               & hypothesis space (a set)                & \verb!\mathcal{H}! & \verb!\fH! \\
+        $\vtheta$                                           & a set of parameters                     & \verb!\bm{\theta}! & \verb!\vtheta! \\
+        $f_{\vtheta}:\fX\to \fY$                            & hypothesis function                     & \verb!\f_{\bm{\theta}}! & \verb!f_{\vtheta}! \\
+        $f$ or $f^*:\fX\to\fY$                              & target function                         & \verb!f,f^*!                           \\
+        $\ell:\fH\times \fZ\to \sR^+$                       & loss function                           & \verb!\ell!                           \\
+        $\fD$                                               & distribution of  $\fZ$                  & \verb!\mathcal{D}! & \verb!\fD! \\
+        $S=\{\vz_i\}_{i=1}^n$                               & $=\{(\vx_i,\vy_i)\}_{i=1}^n$ sample set                                                     \\
+        \begin{tabular}{@{}l @{}}$\LS(\vtheta)$, $L_{n}(\vtheta)$,\\$R_{n}(\vtheta)$, $R_{S}(\vtheta)$\end{tabular}                           & empirical risk or training loss                                                             \\
+        $\LD(\vtheta)$                                      & population risk or expected loss                                                            \\
+        $\sigma:\sR\to\sR^+$                                & activation function                     & \verb!\sigma!                           \\
+        $\vw_j$                                             & input weight                            & \verb!\bm{w}_j! & \verb!\vw_j! \\
+        $a_j$                                               & output weight                           & \verb!a_j!                           \\
+        $b_j$                                               & bias term                               & \verb!b_j!                           \\
+        $f_{\vtheta}(\vx)$ or $f(\vx;\vtheta)$              & neural network                          & \verb!f_{\bm{\theta}}! & \verb!f_{\vtheta}! \\
+        $\sum_{j=1}^{m} a_j \sigma (\vw_j\cdot \vx + b_j) $ & two-layer neural network                                                                    \\
+        ${\rm VCdim}(\fH)$                                  & VC-dimension of  $\fH$                                                                      \\
+        ${\rm Rad} (\fH\circ S)$, ${\rm Rad}_{S} (\fH)$     & Rademacher complexity of $\fH$ on $S$                                                       \\
+        ${\rm Rad}_{n} (\fH)$                               & \begin{tabular}{@{}l @{}}Rademacher complexity\\over samples of size $n$\end{tabular}                                                                   \\
+        GD                                                  & gradient descent                                                                            \\
+        SGD                                                 & stochastic gradient descent                                                                 \\
+        $B$                                                 & a batch set                             & \verb!B!                           \\
+        $|B|$                                               & batch size                              & \verb!b!                           \\
+        $\eta$                                              & learning rate                           & \verb!\eta!                           \\
         %$K_n$&Gram matrix&\verb!K_n!\\
-        $\vk$&discretized frequency&\verb!\bm{k}!&\verb!\vk!\\
-        $\vxi$&continuous frequency&\verb!\bm{\xi}!&\verb!\vxi!\\
-        $*$&convolution operation &\verb!*!\\
+        $\vk$                                               & discretized frequency                   & \verb!\bm{k}! & \verb!\vk! \\
+        $\vxi$                                              & continuous frequency                    & \verb!\bm{\xi}! & \verb!\vxi! \\
+        $*$                                                 & convolution operation                   & \verb!*!                           \\
         \bottomrule
     \end{tabular}
 \end{center}
@@ -193,31 +194,25 @@ The convolution operation is denoted by $*$.
 \begin{center}
     \begin{tabular}{llll}
         \toprule
-        symbol & meaning & \LaTeX & simplied\\
+        symbol                   & meaning                                                                                     & \LaTeX                  & simplied                \\
         \midrule
-        $d$ & input dimension & \verb!d! &  \\
-        $d_{\rm o}$ & output dimension &\verb!d_{\rm o}! &  \\
-        $m_l$& the number of $l$th layer neuron, $m_0=d$, $m_{L} = d_{\rm o}$&\verb!m_l!\\
-        $\mW^{[l]}$ & the $l$th layer weight &\verb!\bm{W}^{[l]}!&\verb!\mW^{[l]}!\\
-        $\vb^{[l]}$ & the $l$th layer bias term&\verb!\bm{b}^{[l]}!&\verb!\vb^{[l]}!\\
-        $\circ$&entry-wise operation&\verb!\circ!\\
-        $\sigma:\sR\to\sR^+$& activation function &\verb!\sigma!\\
-        $\vtheta$&$=(\mW^{[0]},\ldots,\vW^{[L-1]},\vb^{[0]},\ldots,\vb^{[L-1]})$,  parameters&\verb!\bm{\theta}!&\verb!\vtheta!\\
-        $f_{\vtheta}^{[0]}(\vx)$&$=\vx$\\
-        $f_{\vtheta}^{[l]}(\vx)$&$=\sigma\circ(\mW^{[l-1]} f_{\vtheta}^{[l-1]}(\vx) + \vb^{[l-1]})$,  $l$-th  layer output \\
-         $f_{\vtheta}(\vx)$&$=f_{\vtheta}^{[L]}(\vx)=\mW^{[L-1]} f_{\vtheta}^{[L-1]}(\vx) + \vb^{[L-1]}$,  $L$-layer NN\\
+        $d$                      & input dimension                                                                             & \verb!d! &                         \\
+        $d_{\rm o}$              & output dimension                                                                            & \verb!d_{\rm o}! &                         \\
+        $m_l$                    & the number of $l$th layer neuron, $m_0=d$, $m_{L} = d_{\rm o}$                              & \verb!m_l!                           \\
+        $\mW^{[l]}$              & the $l$th layer weight                                                                      & \verb!\bm{W}^{[l]}! & \verb!\mW^{[l]}! \\
+        $\vb^{[l]}$              & the $l$th layer bias term                                                                   & \verb!\bm{b}^{[l]}! & \verb!\vb^{[l]}! \\
+        $\circ$                  & entry-wise operation                                                                        & \verb!\circ!                           \\
+        $\sigma:\sR\to\sR^+$     & activation function                                                                         & \verb!\sigma!                           \\
+        $\vtheta$                & $=(\mW^{[0]},\ldots,\vW^{[L-1]},\vb^{[0]},\ldots,\vb^{[L-1]})$,  parameters                 & \verb!\bm{\theta}! & \verb!\vtheta! \\
+        $f_{\vtheta}^{[0]}(\vx)$ & $=\vx$                                                                                                                                          \\
+        $f_{\vtheta}^{[l]}(\vx)$ & $=\sigma\circ(\mW^{[l-1]} f_{\vtheta}^{[l-1]}(\vx) + \vb^{[l-1]})$,  $l$-th  layer output                                                       \\
+        $f_{\vtheta}(\vx)$       & $=f_{\vtheta}^{[L]}(\vx)=\mW^{[L-1]} f_{\vtheta}^{[L-1]}(\vx) + \vb^{[L-1]}$,  $L$-layer NN                                                     \\
         \bottomrule
     \end{tabular}
 \end{center}
 
 \newpage
 \section{Acknowledgements}
-Chenglong Bao (Tsinghua), Zhengdao Chen (NYU), Bin Dong (Peking), Weinan E (Princeton),  Quanquan Gu (UCLA), Kaizhu Huang (XJTLU), Shi Jin (SJTU), Jian Li (Tsinghua), Lei Li (SJTU), Tiejun Li (Peking),   Zhenguo Li (Huawei), Zhemin Li (NUDT), Shaobo Lin (XJTU), Ziqi Liu (CSRC),  Zichao Long (Peking), Chao Ma (Princeton),  Chao Ma (SJTU), Yuheng Ma (WHU),    Dengyu Meng (XJTU), Wang Miao (Peking),  Pingbing Ming (CAS), Zuoqiang Shi (Tsinghua), Jihong Wang (CSRC), Liwei Wang (Peking), Bican Xia (Peking), Zhouwang Yang (USTC),  Haijun Yu (CAS),  Yang Yuan  (Tsinghua),  Cheng Zhang (Peking),  Lulu Zhang (SJTU), Jiwei Zhang  (WHU),   Pingwen Zhang (Peking), Xiaoqun Zhang (SJTU),  Chengchao Zhao (CSRC), Zhanxing Zhu (Peking), Chuan Zhou (CAS),  Xiang Zhou (cityU). 
-
-
-
-
-
-
+Chenglong Bao (Tsinghua), Zhengdao Chen (NYU), Bin Dong (Peking), Weinan E (Princeton),  Quanquan Gu (UCLA), Kaizhu Huang (XJTLU), Shi Jin (SJTU), Jian Li (Tsinghua), Lei Li (SJTU), Tiejun Li (Peking),   Zhenguo Li (Huawei), Zhemin Li (NUDT), Shaobo Lin (XJTU), Ziqi Liu (CSRC),  Zichao Long (Peking), Chao Ma (Princeton),  Chao Ma (SJTU), Yuheng Ma (WHU),    Dengyu Meng (XJTU), Wang Miao (Peking),  Pingbing Ming (CAS), Zuoqiang Shi (Tsinghua), Jihong Wang (CSRC), Liwei Wang (Peking), Bican Xia (Peking), Zhouwang Yang (USTC),  Haijun Yu (CAS),  Yang Yuan  (Tsinghua),  Cheng Zhang (Peking),  Lulu Zhang (SJTU), Jiwei Zhang  (WHU),   Pingwen Zhang (Peking), Xiaoqun Zhang (SJTU),  Chengchao Zhao (CSRC), Zhanxing Zhu (Peking), Chuan Zhou (CAS),  Xiang Zhou (cityU).
 
 \end{document}
