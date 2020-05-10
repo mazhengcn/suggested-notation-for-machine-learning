@@ -1,5 +1,15 @@
 # Suggested Notation for Machine Learning
 
+## Authors
+
+- **Beijing Academy of Artificial Intelligence**
+- **Beijing Academy of Artificial Intelligence (北京智源人工智能研究院)**
+- **Peking University (北京大学)**
+- **Shanghai Jiao Tong University (上海交通大学)**-
+- **[Zhi-qin John Xu (许志钦)](mailto:xuzhiqin@sjtu.edu.cn), Tao Luo (罗涛), Zheng Ma (马征), Yaoyu Zhang (张耀宇)** - _Initial work_
+
+## Introduction
+
 > This introduces a suggestion of mathematical notation protocol for machine learning.
 
 The field of machine learning is evolving rapidly in recent years. Communication between different researchers and research groups becomes increasingly important. A key challenge for communication arises from inconsistent notation usages among different papers. This proposal suggests a standard for commonly used mathematical notation for machine learning. In this first version, only some notation are mentioned and more notation are left to be done. This proposal will be regularly updated based on the progress of the field. We look forward to more suggestions to improve this proposal in future versions.
@@ -7,6 +17,8 @@ The field of machine learning is evolving rapidly in recent years. Communication
 ## Tabel of Contents
 
 - [Suggested Notation for Machine Learning](#suggested-notation-for-machine-learning)
+  - [Authors](#authors)
+  - [Introduction](#introduction)
   - [Tabel of Contents](#tabel-of-contents)
   - [Dataset](#dataset)
   - [Function](#function)
