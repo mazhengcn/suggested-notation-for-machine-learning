@@ -2,11 +2,10 @@
 
 ## Authors
 
-- **Beijing Academy of Artificial Intelligence**
 - **Beijing Academy of Artificial Intelligence (北京智源人工智能研究院)**
 - **Peking University (北京大学)**
 - **Shanghai Jiao Tong University (上海交通大学)**
-- **[Zhi-qin John Xu (许志钦)](mailto:xuzhiqin@sjtu.edu.cn), [Tao Luo (罗涛)](mailto:luo196@purdue.edu), [Zheng Ma (马征)](mailto:ma531@purdue.edu), Yaoyu Zhang (张耀宇)** - _Initial work_
+- **[Zhi-qin John Xu (许志钦)](mailto:xuzhiqin@sjtu.edu.cn), [Tao Luo (罗涛)](mailto:luo196@purdue.edu), [Zheng Ma (马征)](mailto:ma531@purdue.edu), [Yaoyu Zhang (张耀宇)](mailto:yaoyu@ias.edu)** - _Initial work_
 
 ## Introduction
 
