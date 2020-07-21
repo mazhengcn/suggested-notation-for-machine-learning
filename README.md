@@ -187,6 +187,17 @@ The convolution operation is denoted by <img alt="$*$" src="svgs/7c74eeb32158ff7
 | <img alt="$f_{\mathbf{\theta}}^{[l]}(\mathbf{x})$" src="svgs/1388c6341f8133d3f2a6cab8a915880a.svg" align="middle" width="45.06860819999999pt" height="34.337843099999986pt"/> | <img alt="$=\sigma\circ(\mathbf{W}^{[l-1]} f_{\mathbf{\theta}}^{[l-1]}(\mathbf{x}) + \mathbf{b}^{[l-1]})$" src="svgs/e3f16cf9944326af1449c40e03c01159.svg" align="middle" width="226.56959984999997pt" height="34.337843099999986pt"/>, <img alt="$l$" src="svgs/2f2322dff5bde89c37bcae4116fe20a8.svg" align="middle" width="5.2283516999999895pt" height="22.831056599999986pt"/>-th layer output                   |
 | <img alt="$f_{\mathbf{\theta}}(\mathbf{x})$" src="svgs/6cec5e8c8ed76bb809fd3d23b5afb245.svg" align="middle" width="38.24770454999999pt" height="24.65753399999998pt"/>       | <img alt="$=f_{\mathbf{\theta}}^{[L]}(\mathbf{x})=\mathbf{W}^{[L-1]} f_{\mathbf{\theta}}^{[L-1]}(\mathbf{x}) + \mathbf{b}^{[L-1]}$" src="svgs/fa0265e13fc6050820383d31af4148a2.svg" align="middle" width="273.61889444999997pt" height="34.337843099999986pt"/>, <img alt="$L$" src="svgs/ddcb483302ed36a59286424aa5e0be17.svg" align="middle" width="11.18724254999999pt" height="22.465723500000017pt"/>-layer NN |
 
+# Citing
+
+Please cite this repository in your publications if it helps your research.
+ ```
+ @misc{beijing2020Suggested,
+   title = {Suggested Notation for Machine Learning},
+   author = {Beijing Academy of Artificial Intelligence},
+   howpublished = {\url{https://github.com/Mayuyu/suggested-notation-for-machine-learning}},
+   year=2020
+}
+ ```
 # Acknowledgements
 
 Chenglong Bao (Tsinghua), Zhengdao Chen (NYU), Bin Dong (Peking), Weinan E (Princeton), Quanquan Gu (UCLA), Kaizhu Huang (XJTLU), Shi Jin (SJTU), Jian Li (Tsinghua), Lei Li (SJTU), Tiejun Li (Peking), Zhenguo Li (Huawei), Zhemin Li (NUDT), Shaobo Lin (XJTU), Ziqi Liu (CSRC), Zichao Long (Peking), Chao Ma (Princeton), Chao Ma (SJTU), Yuheng Ma (WHU), Dengyu Meng (XJTU), Wang Miao (Peking), Pingbing Ming (CAS), Zuoqiang Shi (Tsinghua), Jihong Wang (CSRC), Liwei Wang (Peking), Bican Xia (Peking), Zhouwang Yang (USTC), Haijun Yu (CAS), Yang Yuan (Tsinghua), Cheng Zhang (Peking), Lulu Zhang (SJTU), Jiwei Zhang (WHU), Pingwen Zhang (Peking), Xiaoqun Zhang (SJTU), Chengchao Zhao (CSRC), Zhanxing Zhu (Peking), Chuan Zhou (CAS), Xiang Zhou (cityU).
