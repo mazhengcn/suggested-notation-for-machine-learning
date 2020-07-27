@@ -187,7 +187,7 @@ The convolution operation is denoted by <img alt="$*$" src="svgs/7c74eeb32158ff7
 | <img alt="$f_{\mathbf{\theta}}^{[l]}(\mathbf{x})$" src="svgs/1388c6341f8133d3f2a6cab8a915880a.svg" align="middle" width="45.06860819999999pt" height="34.337843099999986pt"/> | <img alt="$=\sigma\circ(\mathbf{W}^{[l-1]} f_{\mathbf{\theta}}^{[l-1]}(\mathbf{x}) + \mathbf{b}^{[l-1]})$" src="svgs/e3f16cf9944326af1449c40e03c01159.svg" align="middle" width="226.56959984999997pt" height="34.337843099999986pt"/>, <img alt="$l$" src="svgs/2f2322dff5bde89c37bcae4116fe20a8.svg" align="middle" width="5.2283516999999895pt" height="22.831056599999986pt"/>-th layer output                   |
 | <img alt="$f_{\mathbf{\theta}}(\mathbf{x})$" src="svgs/6cec5e8c8ed76bb809fd3d23b5afb245.svg" align="middle" width="38.24770454999999pt" height="24.65753399999998pt"/>       | <img alt="$=f_{\mathbf{\theta}}^{[L]}(\mathbf{x})=\mathbf{W}^{[L-1]} f_{\mathbf{\theta}}^{[L-1]}(\mathbf{x}) + \mathbf{b}^{[L-1]}$" src="svgs/fa0265e13fc6050820383d31af4148a2.svg" align="middle" width="273.61889444999997pt" height="34.337843099999986pt"/>, <img alt="$L$" src="svgs/ddcb483302ed36a59286424aa5e0be17.svg" align="middle" width="11.18724254999999pt" height="22.465723500000017pt"/>-layer NN |
 
-# Citing
+# How to cite
 
 Please cite this repository in your publications if it helps your research.
  ```
