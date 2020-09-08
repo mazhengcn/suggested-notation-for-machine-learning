@@ -118,7 +118,7 @@ The Rademacher complexity of a hypothesis space <img alt="$\mathcal{H}$" src="sv
 
 ## Training
 
-The Gradient Descent is oftern denoted by GD. THe Stochastic Gradient Descent is often denoted by SGD.
+The Gradient Descent is oftern denoted by GD. The Stochastic Gradient Descent is often denoted by SGD.
 
 A batch set is denoted by <img alt="$B$" src="svgs/61e84f854bc6258d4108d08d4c4a0852.svg" align="middle" width="13.29340979999999pt" height="22.465723500000017pt"/> and the batch size is denoted by <img alt="$|B|$" src="svgs/007b57eceda75cfb83dcf22bd67fada1.svg" align="middle" width="22.42585124999999pt" height="24.65753399999998pt"/>.
 
