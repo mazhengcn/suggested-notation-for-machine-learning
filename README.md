@@ -11,14 +11,14 @@
 
 > This introduces a suggestion of mathematical notation protocol for machine learning.
 
-The field of machine learning is evolving rapidly in recent years. Communication between different researchers and research groups becomes increasingly important. A key challenge for communication arises from inconsistent notation usages among different papers. This proposal suggests a standard for commonly used mathematical notation for machine learning. In this first version, only some notation are mentioned and more notation are left to be done. This proposal will be regularly updated based on the progress of the field. We look forward to more suggestions to improve this proposal in future versions.
+The field of machine learning is evolving rapidly in recent years. Communication between different researchers and research groups becomes increasingly important. A key challenge for communication arises from inconsistent notation usages among different papers. This proposal suggests a standard for commonly used mathematical notation for machine learning. In this first version, only some notations are mentioned and more notations are left to be done. This proposal will be regularly updated based on the progress of the field. We look forward to more suggestions to improve this proposal in future versions.
 
-## Tabel of Contents
+## Table of Contents
 
 - [Suggested Notation for Machine Learning](#suggested-notation-for-machine-learning)
   - [Authors](#authors)
   - [Introduction](#introduction)
-  - [Tabel of Contents](#tabel-of-contents)
+  - [Table of Contents](#table-of-contents)
   - [Dataset](#dataset)
   - [Function](#function)
   - [Loss function](#loss-function)
@@ -43,7 +43,7 @@ Dataset <img alt="$S=\{\mathbf{z}_i\}^n_{i=1}=\{(\mathbf{x}_i,\mathbf{y}_i)\}^n_
 
 Usually, <img alt="$\mathcal{X}$" src="svgs/7da75f4e61cdeabf944740206b511812.svg" align="middle" width="14.132466149999988pt" height="22.465723500000017pt"/> is a subset of <img alt="$\mathbb{R}^d$" src="svgs/435f1061aa6f25938c3c3515c083d06c.svg" align="middle" width="18.71525699999999pt" height="27.91243950000002pt"/> and <img alt="$\mathcal{Y}$" src="svgs/fce9019a5e1fa63e079199cd9b11c55e.svg" align="middle" width="12.337954199999992pt" height="22.465723500000017pt"/> is a subset of <img alt="$\mathbb{R}^{d_\text{o}}$" src="svgs/8cf8e83175c24764c15718de79a77a04.svg" align="middle" width="24.308956649999992pt" height="27.91243950000002pt"/>, where <img alt="$d$" src="svgs/2103f85b8b1477f430fc407cad462224.svg" align="middle" width="8.55596444999999pt" height="22.831056599999986pt"/> is the input dimension, <img alt="$d_\text{o}$" src="svgs/d36df281d4cb7796ad889d761f50712c.svg" align="middle" width="15.10851044999999pt" height="22.831056599999986pt"/> is the ouput dimension.
 
-<img alt="$n=\#S$" src="svgs/62bf1fa8e6d3a545fb832bd073c542dd.svg" align="middle" width="56.510581049999985pt" height="22.831056599999986pt"/> is the number of samples. Wihout specification, <img alt="$S$" src="svgs/e257acd1ccbe7fcb654708f1a866bfe9.svg" align="middle" width="11.027402099999989pt" height="22.465723500000017pt"/> and <img alt="$n$" src="svgs/55a049b8f161ae7cfeb0197d75aff967.svg" align="middle" width="9.86687624999999pt" height="14.15524440000002pt"/> are for the training set.
+<img alt="$n=\#S$" src="svgs/62bf1fa8e6d3a545fb832bd073c542dd.svg" align="middle" width="56.510581049999985pt" height="22.831056599999986pt"/> is the number of samples. Without specification, <img alt="$S$" src="svgs/e257acd1ccbe7fcb654708f1a866bfe9.svg" align="middle" width="11.027402099999989pt" height="22.465723500000017pt"/> and <img alt="$n$" src="svgs/55a049b8f161ae7cfeb0197d75aff967.svg" align="middle" width="9.86687624999999pt" height="14.15524440000002pt"/> are for the training set.
 
 ## Function
 
