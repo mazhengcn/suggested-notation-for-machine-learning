@@ -55,7 +55,7 @@ If there exists a target function, it is denoted by <img alt="$f^*$" src="svgs/b
 
 ## Loss function
 
-A loss function, denoted by <img alt="$\ell:\mathcal{H}\times\mathcal{Z}\to\mathbb{R}_{+}:=[0,+\infty)$" src="svgs/91248c7c221d6ed56762761f1038d39f.svg" align="middle" width="198.44712029999997pt" height="24.65753399999998pt"/> measures the difference between a predicted label and a true label, e.g.,
+A loss function, denoted by <img alt="$\ell:\mathcal{H}\times\mathcal{Z}\to\mathbb{R}_{+}:=[0,+\infty)$" src="svgs/91248c7c221d6ed56762761f1038d39f.svg" align="middle" width="198.44712029999997pt" height="24.65753399999998pt"/>, measures the difference between a predicted label and a true label, e.g.,
 
 - <img alt="$L^2$" src="svgs/e8831293b846e3a3799cd6a02e4a0cd9.svg" align="middle" width="17.73978854999999pt" height="26.76175259999998pt"/> loss: <img alt="$\ell(f_{\mathbf{\theta}},\mathbf{z})=(f_{\mathbf{\theta}}(\mathbf{x})-\mathbf{y})^2$" src="svgs/267cbf28f1c2d7238eeb97e3f0c38b68.svg" align="middle" width="160.66181009999997pt" height="26.76175259999998pt"/>, where <img alt="$\mathbf{z}=(\mathbf{x},\mathbf{y})$" src="svgs/02e9c08c82c033896f32f3bf6b2ebb59.svg" align="middle" width="70.62752894999998pt" height="24.65753399999998pt"/>. <img alt="$\ell(f_{\mathbf{\theta}},\mathbf{z})$" src="svgs/d59371cab861973036670c707757eb37.svg" align="middle" width="50.82761969999999pt" height="24.65753399999998pt"/> can also be written as <img alt="$\ell(f_{\mathbf{\theta}},\mathbf{y}))$" src="svgs/2c7e0a944f5282a0a8ed736c8c2d32ad.svg" align="middle" width="59.05823879999999pt" height="24.65753399999998pt"/> for convenience.
 
