@@ -11,7 +11,7 @@
 
 > This introduces a suggestion of mathematical notation protocol for machine learning.
 
-The field of machine learning is evolving rapidly in recent years. Communication between different researchers and research groups becomes increasingly important. A key challenge for communication arises from inconsistent notation usages among different papers. This proposal suggests a standard for commonly used mathematical notation for machine learning. In this first version, only some notations are mentioned and more notations are left to be done. This proposal will be regularly updated based on the progress of the field. We look forward to more suggestions to improve this proposal in future versions.
+The field of machine learning has evolved rapidly in recent years. Communication between different researchers and research groups has become increasingly important. A key challenge for communication arises from inconsistent notation usages among different papers. This proposal suggests a standard for commonly used mathematical notation for machine learning. In this first version, only some notations are mentioned and more notations are left to be done. This proposal will be regularly updated based on the progress of the field. We look forward to more suggestions to improve this proposal in future versions.
 
 ## Table of Contents
 
