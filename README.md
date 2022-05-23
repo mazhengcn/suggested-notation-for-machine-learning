@@ -35,11 +35,15 @@ The field of machine learning is evolving rapidly in recent years. Communication
 
 ## Dataset
 
-Dataset $S = \{ \mathbf{z}_i \}^n_{i=1} = \{ \left(\mathbf{x}_i \mathbf{y}_i \right) \}^n_{i=1}$ is sampled from a distribution $\mathcal{D}$ over a domain $\mathcal{Z} = \mathcal{X} \times \mathcal{Y}$.
+Dataset $S=\\{ \mathbf{z}_i \\}^n\_{i=1}=\\{(\mathbf{x}_i, \mathbf{y}_i) \\}^n\_{i=1}$ is sampled from a distribution $\mathcal{D}$ over a domain $\mathcal{Z} = \mathcal{X} \times \mathcal{Y}$.
 
-- $\mathcal{X}$ is the instances domain (a set)
-- $\mathcal{Y}$ is the label domain (a set)
-- $\mathcal{Z}=\mathcal{X}\times\mathcal{Y}$ is the example domain (a set)
+  * <div>
+    $\mathcal{X}$
+    <div>
+     is the instances domain (a set)
+  * $$\mathcal{Y}$$
+    is the label domain (a set)
+  * \$$\mathcal{Z}=\mathcal{X}\times\mathcal{Y}\$$ is the example domain (a set)
 
 Usually, $\mathcal{X}$ is a subset of $\mathbb{R}^d$ and $\mathcal{Y}$ is a subset of $\mathbb{R}^{d_\text{o}}$, where $d$ is the input dimension, $d_\text{o}$ is the ouput dimension.
 
@@ -51,7 +55,7 @@ A hypothesis space is denoted by $\mathcal{H}$. A hypothesis function is denoted
 
 $\mathbf{\theta}$ denotes the set of parameters of $f_{\mathbf{\theta}}$.
 
-If there exists a target function, it is denoted by $f^*$ or $f^*:\mathcal{X}\to\mathcal{Y}$ satisfying $\mathbf{y}_i=f^*(\mathbf{x}_i)$ for $i=1,\dots,n$.
+If there exists a target function, it is denoted by $f^\*$ or $f^\*:\mathcal{X}\to\mathcal{Y}$ satisfying $\mathbf{y}_i=f^*(\mathbf{x}_i)$ for $i=1,\dots,n$.
 
 ## Loss function
 
@@ -59,7 +63,7 @@ A loss function, denoted by $\ell:\mathcal{H}\times\mathcal{Z}\to\mathbb{R}_{+}:
 
 - $L^2$ loss: $\ell(f_{\mathbf{\theta}},\mathbf{z})=(f_{\mathbf{\theta}}(\mathbf{x})-\mathbf{y})^2$, where $\mathbf{z}=(\mathbf{x},\mathbf{y})$. $\ell(f_{\mathbf{\theta}},\mathbf{z})$ can also be written as $\ell(f_{\mathbf{\theta}},\mathbf{y}))$ for convenience.
 
-Empirical risk or training loss for a set $S=\{(\mathbf{x_i},\mathbf{y_i})\}^n_{i=1}$ is denoted by $L_S(\mathbf{\theta})$ or $L_n(\mathbf{\theta})$ or $R_S(\mathbf{\theta})$ or $R_n(\mathbf{\theta})$,
+Empirical risk or training loss for a set $S=\\{(\mathbf{x}_i,\mathbf{y}_i)\\}^n\_{i=1}$ is denoted by $L_S(\mathbf{\theta})$ or $L_n(\mathbf{\theta})$ or $R_S(\mathbf{\theta})$ or $R_n(\mathbf{\theta})$,
 
 $$
   L_S(\mathbf{\theta})=\frac{1}{n}\sum^n_{i=1}\ell(f_{\mathbf{\theta}}(\mathbf{x}_i),\mathbf{y}_i).
@@ -156,7 +160,7 @@ The convolution operation is denoted by $*$.
 
 | symbol                                                                                           | meaning                                               | Latex              | simplied              |
 | ------------------------------------------------------------------------------------------------ | ----------------------------------------------------- | ------------------ | --------------------- |
-| $\mathbf{x}$                                                                                     | input                                                 | `\bm{x}`           | `\mathbf{x}`          |
+| $$\mathbf{x}$$                                                                                     | input                                                 | `\bm{x}`           | `\mathbf{x}`          |
 | $\mathbf{y}$                                                                                     | output, label                                         | `\bm{y}`           | `\vy`                 |
 | $d$                                                                                              | input dimension                                       | `d`                |                       |
 | $d_{\text{o}}$                                                                                   | output dimension                                      | `d_{\rm o}`        |                       |
