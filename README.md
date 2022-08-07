@@ -37,13 +37,9 @@ The field of machine learning is evolving rapidly in recent years. Communication
 
 Dataset $S=\\{ \mathbf{z}_i \\}^n\_{i=1}=\\{(\mathbf{x}_i, \mathbf{y}_i) \\}^n\_{i=1}$ is sampled from a distribution $\mathcal{D}$ over a domain $\mathcal{Z} = \mathcal{X} \times \mathcal{Y}$.
 
-  * <div>
-    $\mathcal{X}$
-    <div>
-     is the instances domain (a set)
-  * $$\mathcal{Y}$$
-    is the label domain (a set)
-  * \$$\mathcal{Z}=\mathcal{X}\times\mathcal{Y}\$$ is the example domain (a set)
+  * $\mathcal{X}$ is the instances domain (a set)
+  * $\mathcal{Y}$ is the label domain (a set)
+  * $\mathcal{Z}=\mathcal{X}\times\mathcal{Y}\$ is the example domain (a set)
 
 Usually, $\mathcal{X}$ is a subset of $\mathbb{R}^d$ and $\mathcal{Y}$ is a subset of $\mathbb{R}^{d_\text{o}}$, where $d$ is the input dimension, $d_\text{o}$ is the ouput dimension.
 
