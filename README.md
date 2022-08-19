@@ -35,7 +35,7 @@ The field of machine learning is evolving rapidly in recent years. Communication
 
 ## Dataset
 
-Dataset $S=\\{ \mathbf{z}_i \\}^n\_{i=1}=\\{(\mathbf{x}_i, \mathbf{y}_i) \\}^n\_{i=1}$ is sampled from a distribution $\mathcal{D}$ over a domain $\mathcal{Z} = \mathcal{X} \times \mathcal{Y}$.
+Dataset $S=\{ \mathbf{z}_i \}^n_{i=1}=\{(\mathbf{x}_i, \mathbf{y}_i) \}^n_{i=1}$ is sampled from a distribution $\mathcal{D}$ over a domain $\mathcal{Z} = \mathcal{X} \times \mathcal{Y}$.
 
   * $\mathcal{X}$ is the instances domain (a set)
   * $\mathcal{Y}$ is the label domain (a set)
