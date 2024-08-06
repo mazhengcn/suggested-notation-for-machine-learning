@@ -173,7 +173,7 @@ The convolution operation is denoted by $*$.
 | $S=\{\mathbf{z}_i\}_{i=1}^n$                                                                     | $=\{(\mathbf{x}_i,\mathbf{y}_i)\}_{i=1}^n$ sample set |
 | $L_S(\mathbf{\theta})$, $L_{n}(\mathbf{\theta})$, $R_n(\mathbf{\theta})$, $R_S(\mathbf{\theta})$ | empirical risk or training loss                       |
 | $L_D(\mathbf{\theta})$                                                                           | population risk or expected loss                      |
-| $\sigma:\mathbb{R}\to\mathbb{R}^+$                                                               | activation function                                   | `\sigma`           |
+| $\sigma:\mathbb{R}\to\mathbb{R}$                                                               | activation function                                   | `\sigma`           |
 | $\mathbf{w}_j$                                                                                   | input weight                                          | `\bm{w}_j`         | `\mathbf{w}_j`        |
 | $a_j$                                                                                            | output weight                                         | `a_j`              |
 | $b_j$                                                                                            | bias term                                             | `b_j`              |
